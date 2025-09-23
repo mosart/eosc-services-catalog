@@ -1,0 +1,111 @@
+{
+  "metadata": {
+    "registeredBy": "surf-data-team",
+    "registeredAt": "1758556108121",
+    "modifiedBy": "surf-data-team",
+    "modifiedAt": "1758556108121",
+    "published": false
+  },
+  "active": true,
+  "suspended": false,
+  "draft": true,
+  "legacy": false,
+  "status": "pending",
+  "resourceOrganisationGroupID": "surf",
+  "sites": [
+    {
+      "name": "SURF Research Cloud portal",
+      "endpoints": [
+        {
+          "name": "Public landing page",
+          "type": "endpoint_type-gui",
+          "url": "https://www.surf.nl/en/services/compute/surf-research-cloud",
+          "monitoringServiceType": "eu.eosc.container_platform.gui"
+        }
+      ]
+    }
+  ],
+  "acknowledgement": {
+    "consentDataStorage": true,
+    "consentResourceHubDisplay": true,
+    "consentEndpointMonitoring": true,
+    "consentSecurityContact": true
+  },
+  "service": {
+    "id": "surf_research_cloud",
+    "abbreviation": "SRC",
+    "name": "SURF Research Cloud",
+    "resourceOrganisation": "SURF B.V.",
+    "resourceProviders": [
+      "SURF"
+    ],
+    "webpage": "https://www.surf.nl/en/services/compute/surf-research-cloud",
+    "description": "SURF Research Cloud lets researchers assemble tailored virtual research environments with ready-to-use workspaces, software images and datasets, all backed by SURF's secure compute and data infrastructure.",
+    "tagline": "Build secure virtual research environments in minutes.",
+    "logo": "https://merkportaal.surf.nl/wp-content/uploads/2022/09/image-4.png",
+    "scientificDomains": [
+      {
+        "scientificDomain": "scientific_domain-engineering_and_technology",
+        "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+      }
+    ],
+    "categories": [
+      {
+        "category": "category-access_physical_and_eInfrastructures-compute",
+        "subcategory": "subcategory-access_physical_and_eInfrastructures-compute-virtual_machine_management"
+      }
+    ],
+    "targetUsers": [
+      "target_user-research_groups",
+      "target_user-research_communities"
+    ],
+    "geographicalAvailabilities": [
+      "EU"
+    ],
+    "languageAvailabilities": [
+      "en",
+      "nl"
+    ],
+    "resourceGeographicLocations": [
+      "NL"
+    ],
+    "mainContact": {
+      "firstName": "Ivar",
+      "lastName": "Janmaat",
+      "email": "ivar.janmaat@surf.nl",
+      "phone": "+31638678601",
+      "position": "Product Manager",
+      "organisation": "SURF"
+    },
+    "publicContacts": [
+      {
+        "firstName": "SURF",
+        "lastName": "Service Desk",
+        "email": "websupport@surf.nl",
+        "phone": "+31880220300",
+        "organisation": "SURF"
+      }
+    ],
+    "helpdeskEmail": "websupport@surf.nl",
+    "securityContactEmail": "cert@surf.nl",
+    "trl": "trl-9",
+    "lifeCycleStatus": "life_cycle_status-operation",
+    "tags": [
+      "cloud",
+      "virtual research environments",
+      "compute"
+    ],
+    "horizontalService": true,
+    "serviceCategories": [
+      "service_category-compute"
+    ],
+    "marketplaceLocations": [
+      "marketplace_location-access_computing_and_storage_resources",
+      "marketplace_location-build_analysis_environment"
+    ],
+    "helpdeskPage": "https://www.surf.nl/en/contact-surf-service-desk",
+    "termsOfUse": "https://www.surf.nl/en/services/compute/surf-research-cloud",
+    "privacyPolicy": "https://www.surf.nl/en/privacy-statement-surf-bv",
+    "orderType": "order_type-order_required"
+  }
+}

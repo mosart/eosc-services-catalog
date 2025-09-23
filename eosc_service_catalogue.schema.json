@@ -1,0 +1,1901 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://eosc.eu/schemas/service-bundle.json",
+  "title": "EOSC Service Bundle",
+  "description": "JSON Schema for an EOSC Service Bundle, derived from the example payload and Appendix B of the \"Federating Capabilities for EOSC Service Catalogues\" guide.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "metadata": {
+      "$ref": "#/$defs/Metadata"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "suspended": {
+      "type": "boolean"
+    },
+    "draft": {
+      "type": "boolean"
+    },
+    "legacy": {
+      "type": "boolean"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "approved",
+        "enrolled",
+        "offboarded",
+        "pending",
+        "rejected"
+      ],
+      "description": "Must match a value from the Resource Status controlled vocabulary."
+    },
+    "resourceOrganisationGroupID": {
+      "type": "string",
+      "description": "Identifier of the organisation group that owns the service profile."
+    },
+    "loggingInfo": {
+      "$ref": "#/$defs/LoggingInfo"
+    },
+    "latestOnboardingInfo": {
+      "$ref": "#/$defs/LoggingInfo"
+    },
+    "latestUpdateInfo": {
+      "$ref": "#/$defs/LoggingInfo"
+    },
+    "resourceExtras": {
+      "$ref": "#/$defs/ResourceExtras"
+    },
+    "sites": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Site"
+      },
+      "uniqueItems": true
+    },
+    "onboardingIntegration": {
+      "$ref": "#/$defs/OnboardingIntegration"
+    },
+    "nodeId": {
+      "type": "string",
+      "description": "Identifier of the node contributing the service."
+    },
+    "acknowledgement": {
+      "$ref": "#/$defs/Acknowledgement"
+    },
+    "service": {
+      "$ref": "#/$defs/Service"
+    }
+  },
+  "required": [
+    "service"
+  ],
+  "$defs": {
+    "Metadata": {
+      "type": "object",
+      "description": "Metadata describing when and by whom the bundle was registered and updated.",
+      "additionalProperties": false,
+      "properties": {
+        "registeredBy": {
+          "type": "string"
+        },
+        "registeredAt": {
+          "type": "string",
+          "pattern": "^[0-9]{13}$",
+          "description": "Milliseconds since epoch when the resource was registered (string form)."
+        },
+        "modifiedBy": {
+          "type": "string"
+        },
+        "modifiedAt": {
+          "type": "string",
+          "pattern": "^[0-9]{13}$",
+          "description": "Milliseconds since epoch for the most recent update (string form)."
+        },
+        "published": {
+          "type": "boolean"
+        }
+      }
+    },
+    "LoggingInfo": {
+      "type": "object",
+      "description": "Audit details for lifecycle events. Appendix B does not detail the fields, so the structure is left open.",
+      "additionalProperties": true
+    },
+    "ResourceExtras": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "EOSCIFGuidelines": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/EOSCIFGuidelines"
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "EOSCIFGuidelines": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "pid": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "semanticRelationship": {
+          "type": "string",
+          "enum": [
+            "semantic_relationship-cw"
+          ],
+          "description": "Must match a value from the Semantic Relationship controlled vocabulary."
+        }
+      }
+    },
+    "Site": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "endpoints": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Endpoint"
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "Endpoint": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "endpoint_type-gui",
+            "endpoint_type-gui_redirect",
+            "endpoint_type-api",
+            "endpoint_type-oidc"
+          ],
+          "description": "Must match a value from the Endpoint Type controlled vocabulary."
+        },
+        "monitoringServiceType": {
+          "type": "string",
+          "enum": [
+            "eu.eosc.container_platform.api",
+            "eu.eosc.container_platform.gui",
+            "eu.eosc.interactive_notebooks.api",
+            "eu.eosc.interactive_notebooks.gui",
+            "eu.eosc.storage.api",
+            "eu.eosc.storage.gui",
+            "eu.eosc.vm.api",
+            "eu.eosc.vm.gui",
+            "eu.eosc.workflow.api",
+            "eu.eosc.workflow.gui",
+            "eu.eosc.hpc.access"
+          ],
+          "description": "Must match a value from the Monitoring Service Type controlled vocabulary."
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "OnboardingIntegration": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "serviceOfferFinalization": {
+          "type": "string",
+          "enum": [
+            "integration_status-completed",
+            "integration_status-in_progress",
+            "integration_status-not_applicable",
+            "integration_status-pending",
+            "integration_status-not_started"
+          ],
+          "description": "Must match a value from the Integration Status controlled vocabulary."
+        },
+        "accountIntegration": {
+          "type": "string",
+          "enum": [
+            "integration_status-completed",
+            "integration_status-in_progress",
+            "integration_status-not_applicable",
+            "integration_status-pending",
+            "integration_status-not_started"
+          ],
+          "description": "Must match a value from the Integration Status controlled vocabulary."
+        },
+        "aaiIntegration": {
+          "type": "string",
+          "enum": [
+            "integration_status-completed",
+            "integration_status-in_progress",
+            "integration_status-not_applicable",
+            "integration_status-pending",
+            "integration_status-not_started"
+          ],
+          "description": "Must match a value from the Integration Status controlled vocabulary."
+        },
+        "omsIntegration": {
+          "type": "string",
+          "enum": [
+            "integration_status-completed",
+            "integration_status-in_progress",
+            "integration_status-not_applicable",
+            "integration_status-pending",
+            "integration_status-not_started"
+          ],
+          "description": "Must match a value from the Integration Status controlled vocabulary."
+        },
+        "securityCompliance": {
+          "type": "string",
+          "enum": [
+            "integration_status-completed",
+            "integration_status-in_progress",
+            "integration_status-not_applicable",
+            "integration_status-pending",
+            "integration_status-not_started"
+          ],
+          "description": "Must match a value from the Integration Status controlled vocabulary."
+        },
+        "wpfsIntegration": {
+          "type": "string",
+          "enum": [
+            "integration_status-completed",
+            "integration_status-in_progress",
+            "integration_status-not_applicable",
+            "integration_status-pending",
+            "integration_status-not_started"
+          ],
+          "description": "Must match a value from the Integration Status controlled vocabulary."
+        }
+      }
+    },
+    "Acknowledgement": {
+      "type": "object",
+      "description": "Consent statements required during onboarding.",
+      "additionalProperties": false,
+      "properties": {
+        "consentDataStorage": {
+          "type": "boolean",
+          "description": "Consent to automatically store submitted information in the EOSC EU Node catalogue services."
+        },
+        "consentResourceHubDisplay": {
+          "type": "boolean",
+          "description": "Consent to display selected information in the EOSC Resource Hub after onboarding."
+        },
+        "consentEndpointMonitoring": {
+          "type": "boolean",
+          "description": "Consent to automatically monitor registered service endpoints for uptime."
+        },
+        "consentSecurityContact": {
+          "type": "boolean",
+          "description": "Consent for the security contact to be contacted by the EOSC Security Team in case of incidents."
+        }
+      },
+      "required": [
+        "consentDataStorage",
+        "consentResourceHubDisplay",
+        "consentEndpointMonitoring",
+        "consentSecurityContact"
+      ]
+    },
+    "AlternativeIdentifier": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        }
+      }
+    },
+    "MultimediaPair": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "multimediaURL": {
+          "type": "string",
+          "format": "uri"
+        },
+        "multimediaName": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "multimediaURL"
+      ]
+    },
+    "UseCasesPair": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "useCaseURL": {
+          "type": "string",
+          "format": "uri"
+        },
+        "useCaseName": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "useCaseURL"
+      ]
+    },
+    "ServiceCategory": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "category": {
+          "type": "string",
+          "enum": [
+            "category-access_physical_and_eInfrastructures-compute",
+            "category-access_physical_and_eInfrastructures-data_storage",
+            "category-access_physical_and_eInfrastructures-instrument_and_equipment",
+            "category-access_physical_and_eInfrastructures-material_storage",
+            "category-access_physical_and_eInfrastructures-network",
+            "category-aggregators_and_integrators-aggregators_and_integrators",
+            "category-other-other",
+            "category-processing_and_analysis-data_analysis",
+            "category-processing_and_analysis-data_management",
+            "category-processing_and_analysis-measurement_and_materials_analysis",
+            "category-security_and_operations-operations_and_infrastructure_management_services",
+            "category-security_and_operations-security_and_identity",
+            "category-sharing_and_discovery-applications",
+            "category-sharing_and_discovery-data",
+            "category-sharing_and_discovery-development_resources",
+            "category-sharing_and_discovery-samples",
+            "category-sharing_and_discovery-scholarly_communication",
+            "category-sharing_and_discovery-software",
+            "category-training_and_support-consultancy_and_support",
+            "category-training_and_support-education_and_training"
+          ],
+          "description": "Must match a value from the Category controlled vocabulary."
+        },
+        "subcategory": {
+          "type": "string",
+          "enum": [
+            "subcategory-processing_and_analysis-data_analysis-2d_3d_digitisation",
+            "subcategory-sharing_and_discovery-development_resources-apis_repository_gateway",
+            "subcategory-processing_and_analysis-data_management-access",
+            "subcategory-security_and_operations-operations_and_infrastructure_management_services-accounting",
+            "subcategory-security_and_operations-operations_and_infrastructure_management_services-analysis",
+            "subcategory-sharing_and_discovery-scholarly_communication-analysis",
+            "subcategory-processing_and_analysis-measurement_and_materials_analysis-analysis",
+            "subcategory-processing_and_analysis-data_management-annotation",
+            "subcategory-processing_and_analysis-data_management-anonymisation",
+            "subcategory-training_and_support-consultancy_and_support-application_optimisation",
+            "subcategory-training_and_support-consultancy_and_support-application_scaling",
+            "subcategory-training_and_support-consultancy_and_support-application_porting",
+            "subcategory-aggregators_and_integrators-aggregators_and_integrators-applications",
+            "subcategory-sharing_and_discovery-applications-applications_repository",
+            "subcategory-access_physical_and_eInfrastructures-data_storage-archive",
+            "subcategory-access_physical_and_eInfrastructures-material_storage-archiving",
+            "subcategory-processing_and_analysis-data_analysis-artificial_intelligence",
+            "subcategory-access_physical_and_eInfrastructures-material_storage-assembly",
+            "subcategory-sharing_and_discovery-scholarly_communication-assessment",
+            "subcategory-training_and_support-consultancy_and_support-audit_and_assessment",
+            "subcategory-access_physical_and_eInfrastructures-data_storage-backup",
+            "subcategory-training_and_support-consultancy_and_support-benchmarking",
+            "subcategory-security_and_operations-operations_and_infrastructure_management_services-billing",
+            "subcategory-sharing_and_discovery-samples-biological_samples",
+            "subcategory-processing_and_analysis-data_management-brokering",
+            "subcategory-sharing_and_discovery-applications-business",
+            "subcategory-training_and_support-consultancy_and_support-calibration",
+            "subcategory-training_and_support-consultancy_and_support-certification",
+            "subcategory-security_and_operations-security_and_identity-certification_authority",
+            "subcategory-processing_and_analysis-measurement_and_materials_analysis-characterisation",
+            "subcategory-sharing_and_discovery-samples-characterisation",
+            "subcategory-sharing_and_discovery-samples-chemical_compounds_library",
+            "subcategory-access_physical_and_eInfrastructures-instrument_and_equipment-chromatographer",
+            "subcategory-sharing_and_discovery-data-clinical_trial_data",
+            "subcategory-sharing_and_discovery-applications-collaboration",
+            "subcategory-sharing_and_discovery-applications-communication",
+            "subcategory-security_and_operations-operations_and_infrastructure_management_services-configuration",
+            "subcategory-training_and_support-consultancy_and_support-consulting",
+            "subcategory-access_physical_and_eInfrastructures-compute-container_management",
+            "subcategory-access_physical_and_eInfrastructures-network-content_delivery_network",
+            "subcategory-security_and_operations-operations_and_infrastructure_management_services-coordination",
+            "subcategory-security_and_operations-security_and_identity-coordination",
+            "subcategory-access_physical_and_eInfrastructures-instrument_and_equipment-cytometer",
+            "subcategory-access_physical_and_eInfrastructures-network-dns",
+            "subcategory-access_physical_and_eInfrastructures-data_storage-data",
+            "subcategory-aggregators_and_integrators-aggregators_and_integrators-data",
+            "subcategory-sharing_and_discovery-data-data_archives",
+            "subcategory-processing_and_analysis-data_analysis-data_extrapolation",
+            "subcategory-sharing_and_discovery-development_resources-developer_tools",
+            "subcategory-access_physical_and_eInfrastructures-data_storage-digital_preservation",
+            "subcategory-processing_and_analysis-data_management-digitisation",
+            "subcategory-access_physical_and_eInfrastructures-instrument_and_equipment-digitisation_equipment",
+            "subcategory-access_physical_and_eInfrastructures-network-direct_connect",
+            "subcategory-sharing_and_discovery-scholarly_communication-discovery",
+            "subcategory-processing_and_analysis-data_management-discovery",
+            "subcategory-access_physical_and_eInfrastructures-data_storage-disk",
+            "subcategory-access_physical_and_eInfrastructures-material_storage-disposal",
+            "subcategory-sharing_and_discovery-applications-education",
+            "subcategory-processing_and_analysis-data_management-embargo",
+            "subcategory-sharing_and_discovery-data-epidemiological_data",
+            "subcategory-access_physical_and_eInfrastructures-network-exchange",
+            "subcategory-access_physical_and_eInfrastructures-data_storage-file",
+            "subcategory-security_and_operations-security_and_identity-firewall",
+            "subcategory-processing_and_analysis-data_analysis-forecast",
+            "subcategory-access_physical_and_eInfrastructures-material_storage-fulfilment",
+            "subcategory-access_physical_and_eInfrastructures-instrument_and_equipment-geophysical",
+            "subcategory-sharing_and_discovery-data-government_and_agency_data",
+            "subcategory-security_and_operations-security_and_identity-group_management",
+            "subcategory-access_physical_and_eInfrastructures-compute-hpc_access",
+            "subcategory-security_and_operations-operations_and_infrastructure_management_services-helpdesk",
+            "subcategory-security_and_operations-security_and_identity-identity_and_access_management",
+            "subcategory-processing_and_analysis-data_analysis-image_data_analysis",
+            "subcategory-training_and_support-education_and_training-in_house_courses",
+            "subcategory-access_physical_and_eInfrastructures-compute-interactive_notebooks",
+            "subcategory-processing_and_analysis-data_management-interlinking",
+            "subcategory-access_physical_and_eInfrastructures-compute-job_execution",
+            "subcategory-access_physical_and_eInfrastructures-instrument_and_equipment-laser",
+            "subcategory-sharing_and_discovery-software-libraries",
+            "subcategory-access_physical_and_eInfrastructures-network-load_balancer",
+            "subcategory-processing_and_analysis-data_analysis-machine_learning",
+            "subcategory-processing_and_analysis-data_management-maintenance",
+            "subcategory-processing_and_analysis-measurement_and_materials_analysis-maintenance_and_modification",
+            "subcategory-sharing_and_discovery-data-metadata",
+            "subcategory-training_and_support-consultancy_and_support-methodology_development",
+            "subcategory-access_physical_and_eInfrastructures-instrument_and_equipment-microscopy",
+            "subcategory-processing_and_analysis-data_management-mining",
+            "subcategory-training_and_support-consultancy_and_support-modeling_and_simulation",
+            "subcategory-security_and_operations-operations_and_infrastructure_management_services-monitoring",
+            "subcategory-access_physical_and_eInfrastructures-instrument_and_equipment-monument_maintenance_equipment",
+            "subcategory-access_physical_and_eInfrastructures-data_storage-online",
+            "subcategory-training_and_support-education_and_training-online_courses",
+            "subcategory-sharing_and_discovery-data-online_service_data",
+            "subcategory-training_and_support-education_and_training-open_registration_courses",
+            "subcategory-access_physical_and_eInfrastructures-compute-orchestration",
+            "subcategory-security_and_operations-operations_and_infrastructure_management_services-order_management",
+            "subcategory-processing_and_analysis-measurement_and_materials_analysis-other",
+            "subcategory-security_and_operations-operations_and_infrastructure_management_services-other",
+            "subcategory-aggregators_and_integrators-aggregators_and_integrators-other",
+            "subcategory-security_and_operations-security_and_identity-other",
+            "subcategory-sharing_and_discovery-development_resources-other",
+            "subcategory-sharing_and_discovery-data-other",
+            "subcategory-access_physical_and_eInfrastructures-compute-other",
+            "subcategory-sharing_and_discovery-software-other",
+            "subcategory-sharing_and_discovery-applications-other",
+            "subcategory-training_and_support-education_and_training-other",
+            "subcategory-access_physical_and_eInfrastructures-instrument_and_equipment-other",
+            "subcategory-sharing_and_discovery-samples-other",
+            "subcategory-training_and_support-consultancy_and_support-other",
+            "subcategory-processing_and_analysis-data_analysis-other",
+            "subcategory-sharing_and_discovery-scholarly_communication-other",
+            "subcategory-access_physical_and_eInfrastructures-data_storage-other",
+            "subcategory-processing_and_analysis-data_management-other",
+            "subcategory-access_physical_and_eInfrastructures-network-other",
+            "subcategory-access_physical_and_eInfrastructures-material_storage-other",
+            "subcategory-other-other-other",
+            "subcategory-sharing_and_discovery-scholarly_communication-outreach",
+            "subcategory-access_physical_and_eInfrastructures-material_storage-packaging",
+            "subcategory-processing_and_analysis-data_management-persistent_identifier",
+            "subcategory-sharing_and_discovery-software-platform",
+            "subcategory-sharing_and_discovery-samples-preparation",
+            "subcategory-sharing_and_discovery-scholarly_communication-preparation",
+            "subcategory-access_physical_and_eInfrastructures-material_storage-preservation",
+            "subcategory-processing_and_analysis-data_management-preservation",
+            "subcategory-processing_and_analysis-measurement_and_materials_analysis-production",
+            "subcategory-sharing_and_discovery-applications-productivity",
+            "subcategory-training_and_support-consultancy_and_support-prototype_development",
+            "subcategory-sharing_and_discovery-scholarly_communication-publication",
+            "subcategory-processing_and_analysis-data_management-publishing",
+            "subcategory-processing_and_analysis-data_analysis-quality_assesment",
+            "subcategory-access_physical_and_eInfrastructures-material_storage-quality_inspecting",
+            "subcategory-access_physical_and_eInfrastructures-data_storage-queue",
+            "subcategory-access_physical_and_eInfrastructures-instrument_and_equipment-radiation",
+            "subcategory-access_physical_and_eInfrastructures-data_storage-recovery",
+            "subcategory-processing_and_analysis-data_management-registration",
+            "subcategory-training_and_support-education_and_training-related_training",
+            "subcategory-access_physical_and_eInfrastructures-data_storage-replicated",
+            "subcategory-access_physical_and_eInfrastructures-material_storage-repository",
+            "subcategory-training_and_support-education_and_training-required_training",
+            "subcategory-access_physical_and_eInfrastructures-material_storage-reworking",
+            "subcategory-sharing_and_discovery-data-scientific_research_data",
+            "subcategory-access_physical_and_eInfrastructures-compute-serverless_applications_repository",
+            "subcategory-aggregators_and_integrators-aggregators_and_integrators-services",
+            "subcategory-sharing_and_discovery-development_resources-simulation_tools",
+            "subcategory-security_and_operations-security_and_identity-single_sign_on",
+            "subcategory-sharing_and_discovery-applications-social_networking",
+            "subcategory-aggregators_and_integrators-aggregators_and_integrators-software",
+            "subcategory-training_and_support-consultancy_and_support-software_development",
+            "subcategory-sharing_and_discovery-development_resources-software_development_kits",
+            "subcategory-training_and_support-consultancy_and_support-software_improvement",
+            "subcategory-sharing_and_discovery-development_resources-software_libraries",
+            "subcategory-sharing_and_discovery-software-software_package",
+            "subcategory-sharing_and_discovery-software-software_repository",
+            "subcategory-access_physical_and_eInfrastructures-material_storage-sorting",
+            "subcategory-access_physical_and_eInfrastructures-instrument_and_equipment-spectrometer",
+            "subcategory-access_physical_and_eInfrastructures-instrument_and_equipment-spectrophotometer",
+            "subcategory-sharing_and_discovery-data-statistical_data",
+            "subcategory-access_physical_and_eInfrastructures-data_storage-synchronised",
+            "subcategory-processing_and_analysis-measurement_and_materials_analysis-testing_and_validation",
+            "subcategory-training_and_support-consultancy_and_support-technology_transfer",
+            "subcategory-training_and_support-consultancy_and_support-testing",
+            "subcategory-security_and_operations-security_and_identity-threat_protection",
+            "subcategory-security_and_operations-security_and_identity-tools",
+            "subcategory-access_physical_and_eInfrastructures-network-traffic_manager",
+            "subcategory-training_and_support-education_and_training-training_platform",
+            "subcategory-training_and_support-education_and_training-training_tool",
+            "subcategory-processing_and_analysis-data_management-transfer",
+            "subcategory-security_and_operations-operations_and_infrastructure_management_services-transportation",
+            "subcategory-security_and_operations-security_and_identity-user_authentication",
+            "subcategory-sharing_and_discovery-applications-utilities",
+            "subcategory-security_and_operations-operations_and_infrastructure_management_services-utilities",
+            "subcategory-access_physical_and_eInfrastructures-network-vpn_gateway",
+            "subcategory-processing_and_analysis-measurement_and_materials_analysis-validation",
+            "subcategory-processing_and_analysis-data_management-validation",
+            "subcategory-access_physical_and_eInfrastructures-compute-virtual_machine_management",
+            "subcategory-access_physical_and_eInfrastructures-network-virtual_nework",
+            "subcategory-processing_and_analysis-data_analysis-visualization",
+            "subcategory-access_physical_and_eInfrastructures-material_storage-warehousing",
+            "subcategory-processing_and_analysis-measurement_and_materials_analysis-workflows",
+            "subcategory-processing_and_analysis-data_analysis-workflows",
+            "subcategory-access_physical_and_eInfrastructures-compute-workload_management",
+            "subcategory-sharing_and_discovery-scholarly_communication-writing"
+          ],
+          "description": "Must match a value from the Subcategory controlled vocabulary."
+        }
+      },
+      "required": [
+        "category"
+      ]
+    },
+    "ServiceProviderDomain": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "scientificDomain": {
+          "type": "string",
+          "enum": [
+            "scientific_domain-agricultural_sciences",
+            "scientific_domain-engineering_and_technology",
+            "scientific_domain-generic",
+            "scientific_domain-humanities",
+            "scientific_domain-medical_and_health_sciences",
+            "scientific_domain-natural_sciences",
+            "scientific_domain-other",
+            "scientific_domain-social_sciences"
+          ],
+          "description": "Must match a value from the Scientific Domain controlled vocabulary."
+        },
+        "scientificSubdomain": {
+          "type": "string",
+          "enum": [
+            "scientific_subdomain-agricultural_sciences-agricultural_biotechnology",
+            "scientific_subdomain-agricultural_sciences-agriculture_forestry_and_fisheries",
+            "scientific_subdomain-agricultural_sciences-animal_and_dairy_sciences",
+            "scientific_subdomain-agricultural_sciences-other_agricultural_sciences",
+            "scientific_subdomain-agricultural_sciences-veterinary_sciences",
+            "scientific_subdomain-engineering_and_technology-chemical_engineering",
+            "scientific_subdomain-engineering_and_technology-civil_engineering",
+            "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering",
+            "scientific_subdomain-engineering_and_technology-environmental_biotechnology",
+            "scientific_subdomain-engineering_and_technology-environmental_engineering",
+            "scientific_subdomain-engineering_and_technology-industrial_biotechnology",
+            "scientific_subdomain-engineering_and_technology-materials_engineering",
+            "scientific_subdomain-engineering_and_technology-mechanical_engineering",
+            "scientific_subdomain-engineering_and_technology-medical_engineering",
+            "scientific_subdomain-engineering_and_technology-nanotechnology",
+            "scientific_subdomain-engineering_and_technology-other_engineering_and_technology_sciences",
+            "scientific_subdomain-generic-generic",
+            "scientific_subdomain-humanities-arts",
+            "scientific_subdomain-humanities-history_and_archaeology",
+            "scientific_subdomain-humanities-languages_and_literature",
+            "scientific_subdomain-humanities-other_humanities",
+            "scientific_subdomain-humanities-philosophy_ethics_and_religion",
+            "scientific_subdomain-medical_and_health_sciences-basic_medicine",
+            "scientific_subdomain-medical_and_health_sciences-clinical_medicine",
+            "scientific_subdomain-medical_and_health_sciences-health_sciences",
+            "scientific_subdomain-medical_and_health_sciences-medical_biotechnology",
+            "scientific_subdomain-medical_and_health_sciences-other_medical_sciences",
+            "scientific_subdomain-natural_sciences-biological_sciences",
+            "scientific_subdomain-natural_sciences-chemical_sciences",
+            "scientific_subdomain-natural_sciences-computer_and_information_sciences",
+            "scientific_subdomain-natural_sciences-earth_and_related_environmental_sciences",
+            "scientific_subdomain-natural_sciences-mathematics",
+            "scientific_subdomain-natural_sciences-other_natural_sciences",
+            "scientific_subdomain-natural_sciences-physical_sciences",
+            "scientific_subdomain-other-other",
+            "scientific_subdomain-social_sciences-economics_and_business",
+            "scientific_subdomain-social_sciences-educational_sciences",
+            "scientific_subdomain-social_sciences-law",
+            "scientific_subdomain-social_sciences-media_and_communications",
+            "scientific_subdomain-social_sciences-other_social_sciences",
+            "scientific_subdomain-social_sciences-political_sciences",
+            "scientific_subdomain-social_sciences-psychology",
+            "scientific_subdomain-social_sciences-social_and_economic_geography",
+            "scientific_subdomain-social_sciences-sociology"
+          ],
+          "description": "Must match a value from the Scientific Subdomain controlled vocabulary."
+        }
+      },
+      "required": [
+        "scientificDomain",
+        "scientificSubdomain"
+      ]
+    },
+    "ServiceMainContact": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "firstName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "lastName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "email": {
+          "type": "string",
+          "format": "email"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "position": {
+          "type": "string"
+        },
+        "organisation": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "firstName",
+        "lastName",
+        "email"
+      ]
+    },
+    "ServicePublicContact": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string",
+          "format": "email"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "position": {
+          "type": "string"
+        },
+        "organisation": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "email"
+      ]
+    },
+    "Service": {
+      "type": "object",
+      "description": "Detailed metadata describing the service offering.",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the service (auto-generated by EOSC systems)."
+        },
+        "abbreviation": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Short abbreviation for the service name."
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Full name of the service."
+        },
+        "resourceOrganisation": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Name of the organisation providing the service."
+        },
+        "resourceProviders": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "webpage": {
+          "type": "string",
+          "format": "uri",
+          "description": "Public webpage describing the service."
+        },
+        "alternativeIdentifiers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/AlternativeIdentifier"
+          },
+          "uniqueItems": true
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Detailed description of the service."
+        },
+        "tagline": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Short marketing tagline for the service."
+        },
+        "logo": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL for the service logo image."
+        },
+        "multimedia": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/MultimediaPair"
+          },
+          "uniqueItems": true
+        },
+        "useCases": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/UseCasesPair"
+          },
+          "uniqueItems": true
+        },
+        "scientificDomains": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ServiceProviderDomain"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "categories": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ServiceCategory"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "targetUsers": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "target_user-businesses",
+              "target_user-funders",
+              "target_user-innovators",
+              "target_user-other",
+              "target_user-policy_makers",
+              "target_user-providers",
+              "target_user-research_communities",
+              "target_user-research_groups",
+              "target_user-research_infrastructure_managers",
+              "target_user-research_managers",
+              "target_user-research_networks",
+              "target_user-research_organisations",
+              "target_user-research_projects",
+              "target_user-researchers",
+              "target_user-resource_managers",
+              "target_user-resource_provider_managers",
+              "target_user-publishers",
+              "target_user-students"
+            ],
+            "description": "Must match a value from the Target User controlled vocabulary."
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "accessTypes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "access_type-mail_in",
+              "access_type-other",
+              "access_type-physical",
+              "access_type-remote",
+              "access_type-virtual"
+            ],
+            "description": "Must match a value from the Access Type controlled vocabulary."
+          },
+          "uniqueItems": true
+        },
+        "accessModes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "access_mode-free",
+              "access_mode-free_conditionally",
+              "access_mode-other",
+              "access_mode-paid",
+              "access_mode-peer_reviewed"
+            ],
+            "description": "Must match a value from the Access Mode controlled vocabulary."
+          },
+          "uniqueItems": true
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "horizontalService": {
+          "type": "boolean",
+          "description": "Indicates whether the service is classified as horizontal."
+        },
+        "serviceCategories": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "service_category-data_source",
+              "service_category-compute",
+              "service_category-storage",
+              "service_category-other"
+            ],
+            "description": "Must match a value from the Service Category controlled vocabulary."
+          },
+          "uniqueItems": true
+        },
+        "marketplaceLocations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "marketplace_location-discover_research_outputs",
+              "marketplace_location-process_and_analyze",
+              "marketplace_location-manage_research_data",
+              "marketplace_location-access_computing_and_storage_resources",
+              "marketplace_location-access_research_infrastructures",
+              "marketplace_location-publish_research_outputs",
+              "marketplace_location-access_training_material",
+              "marketplace_location-find_instruments_and_equipment",
+              "marketplace_location-build_analysis_environment",
+              "marketplace_location-find_supporting_services_for_eInfras",
+              "marketplace_location-explore_other_research_catalogues"
+            ],
+            "description": "Must match a value from the Marketplace Location controlled vocabulary."
+          },
+          "uniqueItems": true
+        },
+        "geographicalAvailabilities": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "AH",
+              "EO",
+              "EU",
+              "EZ",
+              "WW"
+            ],
+            "description": "Must match a value from the Region controlled vocabulary."
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "languageAvailabilities": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "aa",
+              "ab",
+              "ae",
+              "af",
+              "ak",
+              "am",
+              "an",
+              "ar",
+              "as",
+              "av",
+              "ay",
+              "az",
+              "ba",
+              "be",
+              "bg",
+              "bh",
+              "bi",
+              "bm",
+              "bn",
+              "bo",
+              "br",
+              "bs",
+              "ca",
+              "ce",
+              "ch",
+              "co",
+              "cr",
+              "cs",
+              "cu",
+              "cv",
+              "cy",
+              "da",
+              "de",
+              "dv",
+              "dz",
+              "ee",
+              "el",
+              "en",
+              "eo",
+              "es",
+              "et",
+              "eu",
+              "fa",
+              "ff",
+              "fi",
+              "fj",
+              "fo",
+              "fr",
+              "fy",
+              "ga",
+              "gd",
+              "gl",
+              "gn",
+              "gu",
+              "gv",
+              "ha",
+              "he",
+              "hi",
+              "ho",
+              "hr",
+              "ht",
+              "hu",
+              "hy",
+              "hz",
+              "ia",
+              "id",
+              "ie",
+              "ig",
+              "ii",
+              "iii",
+              "ik",
+              "io",
+              "is",
+              "it",
+              "iu",
+              "ja",
+              "jv",
+              "ka",
+              "kg",
+              "ki",
+              "kj",
+              "kk",
+              "kl",
+              "km",
+              "kn",
+              "ko",
+              "kr",
+              "ks",
+              "ku",
+              "kv",
+              "kw",
+              "ky",
+              "la",
+              "lb",
+              "li",
+              "ln",
+              "lo",
+              "lt",
+              "lu",
+              "lv",
+              "mg",
+              "mh",
+              "mi",
+              "mk",
+              "ml",
+              "mn",
+              "mr",
+              "ms",
+              "mt",
+              "my",
+              "na",
+              "nb",
+              "nd",
+              "ne",
+              "ng",
+              "nl",
+              "nn",
+              "no",
+              "nr",
+              "nv",
+              "ny",
+              "oc",
+              "oj",
+              "om",
+              "or",
+              "os",
+              "ot",
+              "pa",
+              "pi",
+              "pl",
+              "ps",
+              "pt",
+              "qu",
+              "rm",
+              "rn",
+              "ro",
+              "ru",
+              "rw",
+              "sa",
+              "sar",
+              "sd",
+              "se",
+              "sg",
+              "si",
+              "sk",
+              "sl",
+              "sm",
+              "sn",
+              "so",
+              "sq",
+              "sr",
+              "ss",
+              "st",
+              "su",
+              "sv",
+              "sw",
+              "ta",
+              "te",
+              "tg",
+              "th",
+              "ti",
+              "tk",
+              "tl",
+              "tn",
+              "to",
+              "tr",
+              "ts",
+              "tt",
+              "tw",
+              "ty",
+              "ug",
+              "uk",
+              "ur",
+              "uz",
+              "ve",
+              "vi",
+              "vo",
+              "wa",
+              "wo",
+              "xh",
+              "yi",
+              "yo",
+              "za",
+              "zh",
+              "zu"
+            ],
+            "description": "Must match a value from the Language controlled vocabulary."
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "resourceGeographicLocations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "AD",
+              "AE",
+              "AF",
+              "AG",
+              "AI",
+              "AL",
+              "AM",
+              "AO",
+              "AQ",
+              "AR",
+              "AS",
+              "AT",
+              "AU",
+              "AW",
+              "AX",
+              "AZ",
+              "BA",
+              "BB",
+              "BD",
+              "BE",
+              "BF",
+              "BG",
+              "BH",
+              "BI",
+              "BJ",
+              "BL",
+              "BM",
+              "BN",
+              "BO",
+              "BQ",
+              "BR",
+              "BS",
+              "BT",
+              "BV",
+              "BW",
+              "BY",
+              "BZ",
+              "CA",
+              "CC",
+              "CD",
+              "CF",
+              "CG",
+              "CH",
+              "CI",
+              "CK",
+              "CL",
+              "CM",
+              "CN",
+              "CO",
+              "CR",
+              "CU",
+              "CV",
+              "CW",
+              "CX",
+              "CY",
+              "CZ",
+              "DE",
+              "DJ",
+              "DK",
+              "DM",
+              "DO",
+              "DZ",
+              "EC",
+              "EE",
+              "EG",
+              "EH",
+              "EL",
+              "ER",
+              "ES",
+              "ET",
+              "FI",
+              "FJ",
+              "FK",
+              "FM",
+              "FO",
+              "FR",
+              "GA",
+              "GD",
+              "GE",
+              "GF",
+              "GG",
+              "GH",
+              "GI",
+              "GL",
+              "GM",
+              "GN",
+              "GP",
+              "GQ",
+              "GS",
+              "GT",
+              "GU",
+              "GW",
+              "GY",
+              "HK",
+              "HM",
+              "HN",
+              "HR",
+              "HT",
+              "HU",
+              "ID",
+              "IE",
+              "IL",
+              "IM",
+              "IN",
+              "IO",
+              "IQ",
+              "IR",
+              "IS",
+              "IT",
+              "JE",
+              "JM",
+              "JO",
+              "JP",
+              "KE",
+              "KG",
+              "KH",
+              "KI",
+              "KM",
+              "KN",
+              "KP",
+              "KR",
+              "KW",
+              "KY",
+              "KZ",
+              "LA",
+              "LB",
+              "LC",
+              "LI",
+              "LK",
+              "LR",
+              "LS",
+              "LT",
+              "LU",
+              "LV",
+              "LY",
+              "MA",
+              "MC",
+              "MD",
+              "ME",
+              "MF",
+              "MG",
+              "MH",
+              "MK",
+              "ML",
+              "MM",
+              "MN",
+              "MO",
+              "MP",
+              "MQ",
+              "MR",
+              "MS",
+              "MT",
+              "MU",
+              "MV",
+              "MW",
+              "MX",
+              "MY",
+              "MZ",
+              "NA",
+              "NC",
+              "NE",
+              "NF",
+              "NG",
+              "NI",
+              "NL",
+              "NO",
+              "NP",
+              "NR",
+              "NU",
+              "NZ",
+              "OM",
+              "OT",
+              "PA",
+              "PE",
+              "PF",
+              "PG",
+              "PH",
+              "PK",
+              "PL",
+              "PM",
+              "PN",
+              "PR",
+              "PS",
+              "PT",
+              "PW",
+              "PY",
+              "QA",
+              "RE",
+              "RO",
+              "RS",
+              "RU",
+              "RW",
+              "SA",
+              "SB",
+              "SC",
+              "SD",
+              "SE",
+              "SG",
+              "SH",
+              "SI",
+              "SJ",
+              "SK",
+              "SL",
+              "SM",
+              "SN",
+              "SO",
+              "SR",
+              "SS",
+              "ST",
+              "SV",
+              "SX",
+              "SY",
+              "SZ",
+              "TC",
+              "TD",
+              "TF",
+              "TG",
+              "TH",
+              "TJ",
+              "TK",
+              "TL",
+              "TM",
+              "TN",
+              "TO",
+              "TR",
+              "TT",
+              "TV",
+              "TW",
+              "TZ",
+              "UA",
+              "UG",
+              "UK",
+              "UM",
+              "US",
+              "UY",
+              "UZ",
+              "VA",
+              "VC",
+              "VE",
+              "VG",
+              "VI",
+              "VN",
+              "VU",
+              "WF",
+              "WS",
+              "YE",
+              "YT",
+              "ZA",
+              "ZM",
+              "ZW"
+            ],
+            "description": "Must match a value from the Country controlled vocabulary."
+          },
+          "uniqueItems": true
+        },
+        "mainContact": {
+          "$ref": "#/$defs/ServiceMainContact"
+        },
+        "publicContacts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ServicePublicContact"
+          },
+          "minItems": 1
+        },
+        "helpdeskEmail": {
+          "type": "string",
+          "format": "email",
+          "description": "Primary helpdesk contact email."
+        },
+        "securityContactEmail": {
+          "type": "string",
+          "format": "email",
+          "description": "Security contact email."
+        },
+        "trl": {
+          "type": "string",
+          "enum": [
+            "trl-1",
+            "trl-2",
+            "trl-3",
+            "trl-4",
+            "trl-5",
+            "trl-6",
+            "trl-7",
+            "trl-8",
+            "trl-9"
+          ],
+          "description": "Must match a value from the Trl controlled vocabulary."
+        },
+        "lifeCycleStatus": {
+          "type": "string",
+          "enum": [
+            "life_cycle_status-alpha",
+            "life_cycle_status-beta",
+            "life_cycle_status-concept",
+            "life_cycle_status-design",
+            "life_cycle_status-discovery",
+            "life_cycle_status-implementation",
+            "life_cycle_status-in_containment",
+            "life_cycle_status-operation",
+            "life_cycle_status-other",
+            "life_cycle_status-planned",
+            "life_cycle_status-preparation",
+            "life_cycle_status-production",
+            "life_cycle_status-retirement",
+            "life_cycle_status-termination"
+          ],
+          "description": "Must match a value from the Life Cycle Status controlled vocabulary."
+        },
+        "certifications": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "standards": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "openSourceTechnologies": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "version": {
+          "type": "string",
+          "description": "Service version identifier."
+        },
+        "lastUpdate": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp of the most recent update (ISO 8601)."
+        },
+        "changeLog": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "requiredResources": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "relatedResources": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "relatedPlatforms": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "related_platform-ands",
+              "related_platform-artportalen",
+              "related_platform-arxiv",
+              "related_platform-ala",
+              "related_platform-avp",
+              "related_platform-aws",
+              "related_platform-bluecloud",
+              "related_platform-cdl",
+              "related_platform-ccdc",
+              "related_platform-cessda",
+              "related_platform-collabwith",
+              "related_platform-cccs",
+              "related_platform-crossref",
+              "related_platform-dariahteach",
+              "related_platform-dice",
+              "related_platform-datacite",
+              "related_platform-ds",
+              "related_platform-doab",
+              "related_platform-einfracz",
+              "related_platform-eirgspp",
+              "related_platform-edugain",
+              "related_platform-eduteams",
+              "related_platform-egi",
+              "related_platform-egifc",
+              "related_platform-egiace",
+              "related_platform-elixir",
+              "related_platform-emodnetc",
+              "related_platform-eol",
+              "related_platform-enc",
+              "related_platform-envri",
+              "related_platform-eoscl",
+              "related_platform-eoscn",
+              "related_platform-eoscp",
+              "related_platform-eudatcdi",
+              "related_platform-elg",
+              "related_platform-evs",
+              "related_platform-garrcp",
+              "related_platform-gatep",
+              "related_platform-gbif",
+              "related_platform-geonames",
+              "related_platform-grin",
+              "related_platform-geoss",
+              "related_platform-hal",
+              "related_platform-hamelin",
+              "related_platform-infnc",
+              "related_platform-ispot",
+              "related_platform-jisc",
+              "related_platform-metacentrum",
+              "related_platform-natusfera",
+              "related_platform-openairee",
+              "related_platform-openairem",
+              "related_platform-openairerg",
+              "related_platform-oc",
+              "related_platform-pogo",
+              "related_platform-pnp",
+              "related_platform-pc",
+              "related_platform-rjb",
+              "related_platform-scopus",
+              "related_platform-seadatanet",
+              "related_platform-tsd",
+              "related_platform-sshom",
+              "related_platform-surf",
+              "related_platform-share",
+              "related_platform-tf",
+              "related_platform-tb",
+              "related_platform-tdp",
+              "related_platform-tnomadl",
+              "related_platform-tpg",
+              "related_platform-tibp",
+              "related_platform-tripleh",
+              "related_platform-tubitakcc",
+              "related_platform-vlab",
+              "related_platform-zbwice",
+              "related_platform-zenodo"
+            ],
+            "description": "Must match a value from the Related Platform controlled vocabulary."
+          },
+          "uniqueItems": true
+        },
+        "fundingBody": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "funding_body-ademe",
+              "funding_body-ahrc",
+              "funding_body-aka",
+              "funding_body-ancs",
+              "funding_body-anr",
+              "funding_body-apvv",
+              "funding_body-arc",
+              "funding_body-arrs",
+              "funding_body-awi",
+              "funding_body-bbsrc",
+              "funding_body-bf",
+              "funding_body-bmbf",
+              "funding_body-caixa",
+              "funding_body-cdti",
+              "funding_body-cea",
+              "funding_body-cihr",
+              "funding_body-cncsis",
+              "funding_body-cnes",
+              "funding_body-cnpq",
+              "funding_body-cnr",
+              "funding_body-cnrs",
+              "funding_body-csf",
+              "funding_body-csic",
+              "funding_body-dashe",
+              "funding_body-dasti",
+              "funding_body-ddf",
+              "funding_body-dff",
+              "funding_body-dfg",
+              "funding_body-dgo6",
+              "funding_body-dlr",
+              "funding_body-dnrf",
+              "funding_body-eaer",
+              "funding_body-ec",
+              "funding_body-epsrc",
+              "funding_body-esa",
+              "funding_body-esrc",
+              "funding_body-etag",
+              "funding_body-fapesp",
+              "funding_body-fct",
+              "funding_body-ffg",
+              "funding_body-fnp",
+              "funding_body-fnr",
+              "funding_body-fnrs",
+              "funding_body-fom",
+              "funding_body-forte",
+              "funding_body-fts",
+              "funding_body-fwf",
+              "funding_body-fwo",
+              "funding_body-gacr",
+              "funding_body-gsrt",
+              "funding_body-ifd",
+              "funding_body-ifremer",
+              "funding_body-imsr",
+              "funding_body-innoviris",
+              "funding_body-inra",
+              "funding_body-inserm",
+              "funding_body-ipev",
+              "funding_body-irc",
+              "funding_body-isc",
+              "funding_body-isciii",
+              "funding_body-isf",
+              "funding_body-iwt",
+              "funding_body-jsps",
+              "funding_body-jst",
+              "funding_body-kaws",
+              "funding_body-kks",
+              "funding_body-lmt",
+              "funding_body-mcst",
+              "funding_body-mecr",
+              "funding_body-mesr",
+              "funding_body-mestd",
+              "funding_body-mgrt",
+              "funding_body-mineco",
+              "funding_body-mistra",
+              "funding_body-mita",
+              "funding_body-miur",
+              "funding_body-most",
+              "funding_body-mpg",
+              "funding_body-mrc",
+              "funding_body-mse",
+              "funding_body-msvvas_sr",
+              "funding_body-nasa",
+              "funding_body-ncbir",
+              "funding_body-ncn",
+              "funding_body-nerc",
+              "funding_body-nhmrc",
+              "funding_body-nig",
+              "funding_body-nkfia",
+              "funding_body-nrf",
+              "funding_body-nserc",
+              "funding_body-nsf",
+              "funding_body-nwo",
+              "funding_body-oeaw",
+              "funding_body-oenfte",
+              "funding_body-onera",
+              "funding_body-other",
+              "funding_body-rannis",
+              "funding_body-rcn",
+              "funding_body-rcuk",
+              "funding_body-rj",
+              "funding_body-rpf",
+              "funding_body-sea",
+              "funding_body-sepa",
+              "funding_body-sfi",
+              "funding_body-sgpi",
+              "funding_body-snf",
+              "funding_body-snsb",
+              "funding_body-srcf",
+              "funding_body-srsa",
+              "funding_body-ssf",
+              "funding_body-sshrc",
+              "funding_body-stfc",
+              "funding_body-stw",
+              "funding_body-tacr",
+              "funding_body-tara",
+              "funding_body-tekes",
+              "funding_body-tubitak",
+              "funding_body-uefiscdi_cncs",
+              "funding_body-ukri",
+              "funding_body-vega",
+              "funding_body-viaa",
+              "funding_body-vinnova",
+              "funding_body-vlaio",
+              "funding_body-vr",
+              "funding_body-vs",
+              "funding_body-wt",
+              "funding_body-wwtf",
+              "funding_body-meys",
+              "funding_body-af"
+            ],
+            "description": "Must match a value from the Funding Body controlled vocabulary."
+          },
+          "uniqueItems": true
+        },
+        "fundingPrograms": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "funding_program-afis2020",
+              "funding_program-agr",
+              "funding_program-agrnet",
+              "funding_program-amf",
+              "funding_program-cdf2020",
+              "funding_program-cef",
+              "funding_program-cf",
+              "funding_program-cf_det",
+              "funding_program-cfsp",
+              "funding_program-cit2020",
+              "funding_program-compreg",
+              "funding_program-cons",
+              "funding_program-copernicus",
+              "funding_program-cosme",
+              "funding_program-cpm_h3",
+              "funding_program-cpm_h4",
+              "funding_program-crea",
+              "funding_program-cust2020",
+              "funding_program-dci2020",
+              "funding_program-e4a",
+              "funding_program-eafrd",
+              "funding_program-eafrd2020",
+              "funding_program-eagf2020",
+              "funding_program-ear2020",
+              "funding_program-eerp",
+              "funding_program-efsd",
+              "funding_program-efsi",
+              "funding_program-egf2020",
+              "funding_program-eidhr2020",
+              "funding_program-emff2020",
+              "funding_program-eni",
+              "funding_program-erdf",
+              "funding_program-esc",
+              "funding_program-esf",
+              "funding_program-esp2017",
+              "funding_program-esp2020",
+              "funding_program-euav",
+              "funding_program-euratom",
+              "funding_program-eurodac2020",
+              "funding_program-eusf2020",
+              "funding_program-eusf_h3",
+              "funding_program-eusf_h4",
+              "funding_program-fead",
+              "funding_program-ff2020",
+              "funding_program-finser2020",
+              "funding_program-fisc2020",
+              "funding_program-gal2014",
+              "funding_program-grld2020",
+              "funding_program-h2020",
+              "funding_program-health",
+              "funding_program-herc3",
+              "funding_program-hfr2015",
+              "funding_program-huma2020",
+              "funding_program-icfs",
+              "funding_program-ies",
+              "funding_program-ifs2020",
+              "funding_program-insc2020",
+              "funding_program-ipa2",
+              "funding_program-isa2015",
+              "funding_program-isa2020",
+              "funding_program-isf",
+              "funding_program-iter",
+              "funding_program-just",
+              "funding_program-life2020",
+              "funding_program-loan2020",
+              "funding_program-mfa",
+              "funding_program-nd",
+              "funding_program-other",
+              "funding_program-outreg",
+              "funding_program-peri2020",
+              "funding_program-pi",
+              "funding_program-psci",
+              "funding_program-regconv",
+              "funding_program-rfmos",
+              "funding_program-sfpas",
+              "funding_program-sis2020",
+              "funding_program-ta_ia",
+              "funding_program-tcc",
+              "funding_program-terrcoop",
+              "funding_program-transreg",
+              "funding_program-vis2020",
+              "funding_program-yei",
+              "funding_program-lripmeys",
+              "funding_program-ddoict",
+              "funding_program-nucleu",
+              "funding_program-driltah",
+              "funding_program-esaeoep"
+            ],
+            "description": "Must match a value from the Funding Program controlled vocabulary."
+          },
+          "uniqueItems": true
+        },
+        "grantProjectNames": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "helpdeskPage": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL of the helpdesk page."
+        },
+        "userManual": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL of the user manual."
+        },
+        "termsOfUse": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL of the service terms of use."
+        },
+        "privacyPolicy": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL of the privacy policy."
+        },
+        "accessPolicy": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL of the access policy."
+        },
+        "resourceLevel": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL describing the resource level details."
+        },
+        "trainingInformation": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL for training material or information."
+        },
+        "statusMonitoring": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL exposing service status or monitoring data."
+        },
+        "maintenance": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL describing maintenance procedures or schedules."
+        },
+        "orderType": {
+          "type": "string",
+          "enum": [
+            "order_type-fully_open_access",
+            "order_type-open_access",
+            "order_type-order_required",
+            "order_type-other"
+          ],
+          "description": "Must match a value from the Order Type controlled vocabulary."
+        },
+        "order": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL to initiate a service order (if applicable)."
+        },
+        "paymentModel": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL describing the payment model."
+        },
+        "pricing": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL with pricing information."
+        }
+      },
+      "required": [
+        "abbreviation",
+        "name",
+        "resourceOrganisation",
+        "webpage",
+        "description",
+        "tagline",
+        "logo",
+        "scientificDomains",
+        "categories",
+        "targetUsers",
+        "geographicalAvailabilities",
+        "languageAvailabilities",
+        "mainContact",
+        "publicContacts",
+        "helpdeskEmail",
+        "securityContactEmail",
+        "trl",
+        "termsOfUse",
+        "privacyPolicy",
+        "orderType"
+      ]
+    }
+  }
+}

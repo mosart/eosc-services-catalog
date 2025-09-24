@@ -55,6 +55,8 @@ Responses include the filtered `items` array plus pagination metadata (`total`, 
 
 The static data backing the API lives in `api/data/services.json`. Each bundle models a realistic subset of the Appendix B schema and can be replaced with harvested records when integrating with production catalogues. The data set is validated on startup against `eosc_service_catalogue.schema.json`; any schema violations will stop the server with a clear error message.
 
+In addition, `api/data/surf-services.json` contains 55 service bundles harvested from the public SURF service catalogue. Both files are loaded and exposed through the same API, so you can experiment with a mixed dataset spanning handcrafted examples and real-world records.
+
 ## Development notes
 
 - Update `api/data/services.json` to plug in data exported from an EOSC node catalogue.

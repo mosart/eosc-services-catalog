@@ -819,9 +819,11 @@
         }
       ],
       "targetUsers": [
-        "target_user-researchers",
+        "target_user-providers",
+        "target_user-research_communities",
+        "target_user-research_infrastructure_managers",
         "target_user-research_projects",
-        "target_user-research_communities"
+        "target_user-researchers"
       ],
       "accessTypes": [
         "access_type-remote"
@@ -840,7 +842,8 @@
         "service_category-compute"
       ],
       "marketplaceLocations": [
-        "marketplace_location-access_computing_and_storage_resources"
+        "marketplace_location-access_computing_and_storage_resources",
+        "marketplace_location-build_analysis_environment"
       ],
       "geographicalAvailabilities": [
         "EU"
@@ -1070,9 +1073,10 @@
         }
       ],
       "targetUsers": [
-        "target_user-researchers",
+        "target_user-research_communities",
         "target_user-research_projects",
-        "target_user-research_communities"
+        "target_user-researchers",
+        "target_user-students"
       ],
       "accessTypes": [
         "access_type-remote"
@@ -1699,9 +1703,11 @@
         }
       ],
       "targetUsers": [
-        "target_user-researchers",
+        "target_user-providers",
+        "target_user-research_communities",
+        "target_user-research_infrastructure_managers",
         "target_user-research_projects",
-        "target_user-research_communities"
+        "target_user-researchers"
       ],
       "accessTypes": [
         "access_type-remote"
@@ -4081,9 +4087,11 @@
         }
       ],
       "targetUsers": [
-        "target_user-researchers",
+        "target_user-publishers",
+        "target_user-research_communities",
         "target_user-research_projects",
-        "target_user-research_communities"
+        "target_user-researchers",
+        "target_user-students"
       ],
       "accessTypes": [
         "access_type-remote"
@@ -6593,15 +6601,17 @@
         }
       ],
       "targetUsers": [
-        "target_user-researchers",
+        "target_user-research_communities",
+        "target_user-research_groups",
         "target_user-research_projects",
-        "target_user-research_communities"
+        "target_user-researchers",
+        "target_user-students"
       ],
       "accessTypes": [
         "access_type-remote"
       ],
       "accessModes": [
-        "access_mode-other"
+        "access_mode-free_conditionally"
       ],
       "tags": [
         "storage-data-management",
@@ -6613,7 +6623,7 @@
         "service_category-storage"
       ],
       "marketplaceLocations": [
-        "marketplace_location-access_computing_and_storage_resources"
+        "marketplace_location-manage_research_data"
       ],
       "geographicalAvailabilities": [
         "EU"
@@ -6726,7 +6736,7 @@
         "access_type-remote"
       ],
       "accessModes": [
-        "access_mode-other"
+        "access_mode-free"
       ],
       "tags": [
         "storage-data-management",
@@ -6738,7 +6748,7 @@
         "service_category-storage"
       ],
       "marketplaceLocations": [
-        "marketplace_location-access_computing_and_storage_resources"
+        "marketplace_location-manage_research_data"
       ],
       "geographicalAvailabilities": [
         "EU"

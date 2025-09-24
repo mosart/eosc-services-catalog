@@ -23,7 +23,7 @@ pip install -r api/requirements.txt
 ```
 
 ## Configuration
-- Data fixtures live in `api/data/`. Replace or extend `services.json` / `surf-services.json` with your own bundles; the loader will continue to validate them.
+- Data fixtures live in `api/data/`. Replace or extend `services.json` / `surf-services.json` with your own bundles, or add new filenames to `_DATA_FILES` in `api/app/data.py`; the loader will continue to validate them.
 - Optional scraper dependencies are listed in `scraper/requirements.txt`.
 - Adjust `_ALLOWED_SORT_FIELDS` or extend the FastAPI routes in `api/app/main.py` to support additional behaviour.
 
@@ -33,12 +33,38 @@ Run the development server:
 ```bash
 uvicorn api.app.main:app --reload
 ```
-Browse to `http://127.0.0.1:8000/` to reach the Swagger UI. Key endpoints:
+Browse to `http://127.0.0.1:8000/` to reach the Swagger UI. Key endpoints and sample calls:
 - `GET /healthz` – health check
+  ```bash
+  curl http://127.0.0.1:8000/healthz
+  ```
 - `GET /api/v1/services` – query catalogue entries
+  ```bash
+  curl 'http://127.0.0.1:8000/api/v1/services?keyword=cloud&quantity=5'
+  ```
+  ```python
+  import requests
+
+  resp = requests.get(
+      'http://127.0.0.1:8000/api/v1/services',
+      params={'keyword': 'cloud', 'quantity': 5},
+      timeout=10,
+  )
+  resp.raise_for_status()
+  print(resp.json()['items'][0]['service']['name'])
+  ```
 - `GET /api/v1/services/{prefix}/{suffix}` – fetch a specific bundle
+  ```bash
+  curl http://127.0.0.1:8000/api/v1/services/surf/surf-research-cloud
+  ```
 - `GET /api/v1/schema` – retrieve the EOSC schema
+  ```bash
+  curl http://127.0.0.1:8000/api/v1/schema | jq '.title'
+  ```
 - `GET /api/v1/openapi.json` – download the OpenAPI document
+  ```bash
+  curl http://127.0.0.1:8000/api/v1/openapi.json
+  ```
 
 For a production-style run:
 ```bash

@@ -1,0 +1,19 @@
+# Python virtual environments
+.venv/
+venv/
+ENV/
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# IDE/workspace files
+*.swp
+*.swo
+.DS_Store
+.vscode/
+.idea/
+
+# Uvicorn reload artifacts
+*.log
+

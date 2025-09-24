@@ -1,0 +1,542 @@
+[
+  {
+    "metadata": {
+      "registeredBy": "demo-node",
+      "registeredAt": "1697452800000",
+      "modifiedBy": "demo-node",
+      "modifiedAt": "1719763200000",
+      "published": true
+    },
+    "active": true,
+    "suspended": false,
+    "draft": false,
+    "legacy": false,
+    "status": "approved",
+    "resourceOrganisationGroupID": "group-demo",
+    "nodeId": "demo-node",
+    "sites": [
+      {
+        "name": "Primary site",
+        "endpoints": [
+          {
+            "name": "Public API",
+            "type": "endpoint_type-api",
+            "url": "https://api.example.org/dmp",
+            "monitoringServiceType": "eu.eosc.container_platform.api"
+          },
+          {
+            "name": "Web UI",
+            "type": "endpoint_type-gui",
+            "url": "https://example.org/dmp",
+            "monitoringServiceType": "eu.eosc.container_platform.gui"
+          }
+        ]
+      }
+    ],
+    "service": {
+      "id": "demo/0001",
+      "abbreviation": "DMP",
+      "name": "Data Management Planning Portal",
+      "resourceOrganisation": "Demo Research Infrastructure",
+      "resourceProviders": [
+        "Demo Research Infrastructure"
+      ],
+      "webpage": "https://example.org/dmp",
+      "alternativeIdentifiers": [
+        {
+          "type": "internal",
+          "value": "dmp-portal"
+        }
+      ],
+      "description": "Web portal that helps projects to create FAIR-aligned data management plans and export them to EOSC nodes.",
+      "tagline": "Plan your research data lifecycle.",
+      "logo": "https://example.org/assets/dmp-logo.svg",
+      "multimedia": [
+        {
+          "multimediaURL": "https://media.example.org/dmp/overview.mp4",
+          "multimediaName": "Overview video"
+        }
+      ],
+      "useCases": [
+        {
+          "useCaseURL": "https://example.org/dmp/use-cases/fair",
+          "useCaseName": "Creating FAIR data stewardship plans"
+        }
+      ],
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-social_sciences",
+          "scientificSubdomain": "scientific_subdomain-social_sciences-other_social_sciences"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-processing_and_analysis-data_management",
+          "subcategory": "subcategory-processing_and_analysis-data_management-annotation"
+        }
+      ],
+      "targetUsers": [
+        "target_user-researchers",
+        "target_user-research_projects",
+        "target_user-research_organisations"
+      ],
+      "accessTypes": [
+        "access_type-remote"
+      ],
+      "accessModes": [
+        "access_mode-free"
+      ],
+      "tags": [
+        "data",
+        "planning",
+        "fair"
+      ],
+      "horizontalService": true,
+      "serviceCategories": [
+        "service_category-other"
+      ],
+      "marketplaceLocations": [
+        "marketplace_location-manage_research_data",
+        "marketplace_location-access_training_material"
+      ],
+      "geographicalAvailabilities": [
+        "EU"
+      ],
+      "languageAvailabilities": [
+        "en",
+        "nl"
+      ],
+      "resourceGeographicLocations": [
+        "NL"
+      ],
+      "mainContact": {
+        "firstName": "Jane",
+        "lastName": "Doe",
+        "email": "jane.doe@example.org",
+        "phone": "+31-10-1234567",
+        "position": "Service Owner",
+        "organisation": "Demo Research Infrastructure"
+      },
+      "publicContacts": [
+        {
+          "firstName": "Support",
+          "lastName": "Team",
+          "email": "support@example.org",
+          "phone": "+31-10-7654321",
+          "organisation": "Demo Research Infrastructure"
+        }
+      ],
+      "helpdeskEmail": "helpdesk@example.org",
+      "securityContactEmail": "security@example.org",
+      "trl": "trl-7",
+      "lifeCycleStatus": "life_cycle_status-operation",
+      "certifications": [
+        "ISO9001"
+      ],
+      "standards": [
+        "EOSC-STD-001"
+      ],
+      "openSourceTechnologies": [
+        "PostgreSQL",
+        "Keycloak"
+      ],
+      "version": "1.3.0",
+      "lastUpdate": "2024-06-30T12:00:00Z",
+      "changeLog": [
+        "Initial publication",
+        "Added federated export"
+      ],
+      "requiredResources": [
+        "EOSC AAI"
+      ],
+      "relatedResources": [
+        "https://example.org/dmp/docs"
+      ],
+      "relatedPlatforms": [
+        "related_platform-datacite",
+        "related_platform-egiace"
+      ],
+      "fundingBody": [
+        "funding_body-ec"
+      ],
+      "fundingPrograms": [
+        "funding_program-h2020"
+      ],
+      "grantProjectNames": [
+        "FAIR4Science"
+      ],
+      "helpdeskPage": "https://example.org/dmp/helpdesk",
+      "userManual": "https://example.org/dmp/manual",
+      "termsOfUse": "https://example.org/dmp/terms",
+      "privacyPolicy": "https://example.org/dmp/privacy",
+      "accessPolicy": "https://example.org/dmp/access-policy",
+      "resourceLevel": "https://example.org/dmp/resource-level",
+      "trainingInformation": "https://example.org/dmp/training",
+      "statusMonitoring": "https://status.example.org/dmp",
+      "maintenance": "https://example.org/dmp/maintenance",
+      "orderType": "order_type-order_required",
+      "order": "https://example.org/dmp/order",
+      "paymentModel": "https://example.org/dmp/payment",
+      "pricing": "https://example.org/dmp/pricing"
+    }
+  },
+  {
+    "metadata": {
+      "registeredBy": "surf-node",
+      "registeredAt": "1680307200000",
+      "modifiedBy": "surf-node",
+      "modifiedAt": "1713148800000",
+      "published": true
+    },
+    "active": true,
+    "suspended": false,
+    "draft": false,
+    "legacy": false,
+    "status": "approved",
+    "resourceOrganisationGroupID": "group-hpc",
+    "nodeId": "surf-node",
+    "sites": [
+      {
+        "name": "SURF Research Cloud - EU",
+        "endpoints": [
+          {
+            "name": "Service portal",
+            "type": "endpoint_type-gui",
+            "url": "https://example.org/hpc",
+            "monitoringServiceType": "eu.eosc.container_platform.gui"
+          },
+          {
+            "name": "API",
+            "type": "endpoint_type-api",
+            "url": "https://api.example.org/hpc",
+            "monitoringServiceType": "eu.eosc.container_platform.api"
+          }
+        ]
+      }
+    ],
+    "service": {
+      "id": "hpc/0042",
+      "abbreviation": "SURF-HPC",
+      "name": "SURF Research Cloud",
+      "resourceOrganisation": "SURF",
+      "resourceProviders": [
+        "SURF"
+      ],
+      "webpage": "https://example.org/hpc",
+      "alternativeIdentifiers": [
+        {
+          "type": "doi",
+          "value": "10.1234/hpc.0042"
+        }
+      ],
+      "description": "Self-service platform that provides on-demand HTC and HPC compute resources for EOSC communities.",
+      "tagline": "Elastic compute for science.",
+      "logo": "https://example.org/assets/hpc-logo.svg",
+      "multimedia": [
+        {
+          "multimediaURL": "https://media.example.org/hpc/webinar.mp4",
+          "multimediaName": "Onboarding webinar"
+        }
+      ],
+      "useCases": [
+        {
+          "useCaseURL": "https://example.org/hpc/use-cases/climate",
+          "useCaseName": "Climate modelling workloads"
+        }
+      ],
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-access_physical_and_eInfrastructures-compute",
+          "subcategory": "subcategory-access_physical_and_eInfrastructures-compute-virtual_machine_management"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": [
+        "access_type-remote"
+      ],
+      "accessModes": [
+        "access_mode-paid",
+        "access_mode-free_conditionally"
+      ],
+      "tags": [
+        "compute",
+        "cloud",
+        "hpc"
+      ],
+      "horizontalService": false,
+      "serviceCategories": [
+        "service_category-compute"
+      ],
+      "marketplaceLocations": [
+        "marketplace_location-access_computing_and_storage_resources",
+        "marketplace_location-build_analysis_environment"
+      ],
+      "geographicalAvailabilities": [
+        "EU",
+        "WW"
+      ],
+      "languageAvailabilities": [
+        "en"
+      ],
+      "resourceGeographicLocations": [
+        "NL",
+        "DE"
+      ],
+      "mainContact": {
+        "firstName": "Alex",
+        "lastName": "van Rijn",
+        "email": "alex.vanrijn@example.org",
+        "phone": "+31-30-9876543",
+        "position": "Service Manager",
+        "organisation": "SURF"
+      },
+      "publicContacts": [
+        {
+          "firstName": "Service",
+          "lastName": "Desk",
+          "email": "service.desk@example.org",
+          "phone": "+31-30-1234987",
+          "organisation": "SURF"
+        }
+      ],
+      "helpdeskEmail": "helpdesk.hpc@example.org",
+      "securityContactEmail": "security.hpc@example.org",
+      "trl": "trl-8",
+      "lifeCycleStatus": "life_cycle_status-operation",
+      "certifications": [
+        "ISO27001"
+      ],
+      "standards": [
+        "ITIL"
+      ],
+      "openSourceTechnologies": [
+        "OpenStack",
+        "Slurm"
+      ],
+      "version": "2024.1",
+      "lastUpdate": "2024-05-15T09:00:00Z",
+      "changeLog": [
+        "Extended GPU flavours",
+        "Added support for AAI scoped tokens"
+      ],
+      "requiredResources": [
+        "EOSC AAI",
+        "SURF Storage"
+      ],
+      "relatedResources": [
+        "https://example.org/hpc/docs"
+      ],
+      "relatedPlatforms": [
+        "related_platform-egi",
+        "related_platform-datacite"
+      ],
+      "fundingBody": [
+        "funding_body-nwo"
+      ],
+      "fundingPrograms": [
+        "funding_program-erdf"
+      ],
+      "grantProjectNames": [
+        "SURF Research Cloud"
+      ],
+      "helpdeskPage": "https://example.org/hpc/helpdesk",
+      "userManual": "https://example.org/hpc/manual",
+      "termsOfUse": "https://example.org/hpc/terms",
+      "privacyPolicy": "https://example.org/hpc/privacy",
+      "accessPolicy": "https://example.org/hpc/access-policy",
+      "resourceLevel": "https://example.org/hpc/resource-level",
+      "trainingInformation": "https://example.org/hpc/training",
+      "statusMonitoring": "https://status.example.org/hpc",
+      "maintenance": "https://example.org/hpc/maintenance",
+      "orderType": "order_type-order_required",
+      "order": "https://example.org/hpc/order",
+      "paymentModel": "https://example.org/hpc/payment",
+      "pricing": "https://example.org/hpc/pricing"
+    }
+  },
+  {
+    "metadata": {
+      "registeredBy": "training-node",
+      "registeredAt": "1669852800000",
+      "modifiedBy": "training-node",
+      "modifiedAt": "1706659200000",
+      "published": false
+    },
+    "active": false,
+    "suspended": false,
+    "draft": true,
+    "legacy": false,
+    "status": "pending",
+    "resourceOrganisationGroupID": "group-training",
+    "nodeId": "training-node",
+    "sites": [
+      {
+        "name": "Training portal",
+        "endpoints": [
+          {
+            "name": "Web UI",
+            "type": "endpoint_type-gui",
+            "url": "https://example.org/fair-training",
+            "monitoringServiceType": "eu.eosc.container_platform.gui"
+          }
+        ]
+      }
+    ],
+    "service": {
+      "id": "train/0099",
+      "abbreviation": "FAIR101",
+      "name": "FAIR Data Stewardship Training",
+      "resourceOrganisation": "European Training Hub",
+      "resourceProviders": [
+        "European Training Hub"
+      ],
+      "webpage": "https://example.org/fair-training",
+      "alternativeIdentifiers": [
+        {
+          "type": "slug",
+          "value": "fair-data-training"
+        }
+      ],
+      "description": "Blended learning programme covering FAIR practices, onboarding resources, and EOSC integration workflows.",
+      "tagline": "Train for FAIR success.",
+      "logo": "https://example.org/assets/fair-training-logo.svg",
+      "multimedia": [
+        {
+          "multimediaURL": "https://media.example.org/training/demo.mp4",
+          "multimediaName": "Course trailer"
+        }
+      ],
+      "useCases": [
+        {
+          "useCaseURL": "https://example.org/fair-training/use-cases/life-sciences",
+          "useCaseName": "Supporting life science data stewards"
+        }
+      ],
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-agricultural_sciences",
+          "scientificSubdomain": "scientific_subdomain-agricultural_sciences-other_agricultural_sciences"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-training_and_support-education_and_training",
+          "subcategory": "subcategory-training_and_support-education_and_training-training_platform"
+        }
+      ],
+      "targetUsers": [
+        "target_user-students",
+        "target_user-researchers",
+        "target_user-research_managers"
+      ],
+      "accessTypes": [
+        "access_type-remote"
+      ],
+      "accessModes": [
+        "access_mode-free",
+        "access_mode-peer_reviewed"
+      ],
+      "tags": [
+        "training",
+        "fair",
+        "onboarding"
+      ],
+      "horizontalService": false,
+      "serviceCategories": [
+        "service_category-other"
+      ],
+      "marketplaceLocations": [
+        "marketplace_location-access_training_material",
+        "marketplace_location-manage_research_data"
+      ],
+      "geographicalAvailabilities": [
+        "EU"
+      ],
+      "languageAvailabilities": [
+        "en",
+        "fr"
+      ],
+      "resourceGeographicLocations": [
+        "BE",
+        "FR"
+      ],
+      "mainContact": {
+        "firstName": "Maria",
+        "lastName": "Leroy",
+        "email": "maria.leroy@example.org",
+        "phone": "+32-2-4567890",
+        "position": "Programme Lead",
+        "organisation": "European Training Hub"
+      },
+      "publicContacts": [
+        {
+          "firstName": "Training",
+          "lastName": "Support",
+          "email": "training.support@example.org",
+          "phone": "+32-2-0987654",
+          "organisation": "European Training Hub"
+        }
+      ],
+      "helpdeskEmail": "helpdesk.training@example.org",
+      "securityContactEmail": "security.training@example.org",
+      "trl": "trl-5",
+      "lifeCycleStatus": "life_cycle_status-beta",
+      "certifications": [
+        "EduQual"
+      ],
+      "standards": [
+        "EOSC-TRAIN"
+      ],
+      "openSourceTechnologies": [
+        "Moodle",
+        "Jupyter"
+      ],
+      "version": "0.9.0",
+      "lastUpdate": "2024-01-12T15:30:00Z",
+      "changeLog": [
+        "Pilot cohort completed",
+        "Integrated EOSC onboarding checklist"
+      ],
+      "requiredResources": [
+        "EOSC AAI"
+      ],
+      "relatedResources": [
+        "https://example.org/fair-training/resources"
+      ],
+      "relatedPlatforms": [
+        "related_platform-bluecloud"
+      ],
+      "fundingBody": [
+        "funding_body-ec"
+      ],
+      "fundingPrograms": [
+        "funding_program-esc"
+      ],
+      "grantProjectNames": [
+        "FAIR Awareness"
+      ],
+      "helpdeskPage": "https://example.org/fair-training/helpdesk",
+      "userManual": "https://example.org/fair-training/manual",
+      "termsOfUse": "https://example.org/fair-training/terms",
+      "privacyPolicy": "https://example.org/fair-training/privacy",
+      "accessPolicy": "https://example.org/fair-training/access-policy",
+      "resourceLevel": "https://example.org/fair-training/resource-level",
+      "trainingInformation": "https://example.org/fair-training/training-info",
+      "statusMonitoring": "https://status.example.org/fair-training",
+      "maintenance": "https://example.org/fair-training/maintenance",
+      "orderType": "order_type-open_access",
+      "paymentModel": "https://example.org/fair-training/payment",
+      "pricing": "https://example.org/fair-training/pricing"
+    }
+  }
+]

@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: If you use this demonstrator, please cite it as below.
 title: EOSC Service Catalogue Demonstrator API
 version: 0.1.0
-date-released: 2024-07-23
+date-released: 2025-09-24
 authors:
-  - name: Maurice
+  - name: Maurice Vanderfeesten
 abstract: Minimal viable FastAPI-based service catalogue aligned with the EOSC Appendix A specification.

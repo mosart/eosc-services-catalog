@@ -10,7 +10,7 @@ from typing import Any, Dict, Iterable, List
 # The demonstrator ships with multiple JSON fixtures. They all live under this
 # directory so we can iterate and validate them in a uniform way.
 _DATA_DIR = Path(__file__).resolve().parent.parent / "data"
-_DATA_FILES: Iterable[str] = ("services.json", "surf-services.json")
+_DATA_FILES: Iterable[str] = ("services.json",)
 _SCHEMA_FILE = _DATA_DIR / "eosc_service_catalogue.schema.json"
 
 # Load the official EOSC service bundle schema once so that we can both expose

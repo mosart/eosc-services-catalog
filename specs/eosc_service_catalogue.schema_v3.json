@@ -1,0 +1,549 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://eosc-portal.eu/schemas/eosc_service_catalogue/v3",
+  "title": "EOSC Service Bundle Schema (v3)",
+  "description": "JSON Schema representation of the EOSC service bundle metadata as described in Appendix B of 'EEN Federating Capabilities for EOSC Service Catalogues' v3 (1 October 2025).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "service"
+  ],
+  "properties": {
+    "id": {
+      "$ref": "#/$defs/NonEmptyString",
+      "description": "Unique identifier for the service bundle."
+    },
+    "service": {
+      "$ref": "#/$defs/Service",
+      "description": "Metadata of the catalogued service."
+    }
+  },
+  "$defs": {
+    "NonEmptyString": {
+      "type": "string",
+      "minLength": 1
+    },
+    "URI": {
+      "type": "string",
+      "minLength": 1,
+      "format": "uri"
+    },
+    "Email": {
+      "type": "string",
+      "minLength": 3,
+      "format": "email"
+    },
+    "LanguageCode": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}$"
+    },
+    "AccessMode": {
+      "type": "string",
+      "pattern": "^\\s*(?:access_mode\\-free|access_mode\\-free_conditionally|access_mode\\-other|access_mode\\-paid|access_mode\\-peer_reviewed)\\s*$"
+    },
+    "TargetUser": {
+      "type": "string",
+      "pattern": "^\\s*(?:target_user\\-businesses|target_user\\-funders|target_user\\-innovators|target_user\\-other|target_user\\-policy_makers|target_user\\-providers|target_user\\-publishers|target_user\\-research_communities|target_user\\-research_groups|target_user\\-research_infrastructure_managers|target_user\\-research_managers|target_user\\-research_networks|target_user\\-research_organisations|target_user\\-research_projects|target_user\\-researchers|target_user\\-resource_managers|target_user\\-resource_provider_managers|target_user\\-students)\\s*$"
+    },
+    "TRL": {
+      "type": "string",
+      "enum": [
+        "trl-1",
+        "trl-2",
+        "trl-3",
+        "trl-4",
+        "trl-5",
+        "trl-6",
+        "trl-7",
+        "trl-8",
+        "trl-9"
+      ]
+    },
+    "OrderType": {
+      "type": "string",
+      "enum": [
+        "order_type-fully_open_access",
+        "order_type-open_access",
+        "order_type-order_required",
+        "order_type-other"
+      ]
+    },
+    "CategoryId": {
+      "type": "string",
+      "enum": [
+        "category-access_physical_and_eInfrastructures-compute",
+        "category-access_physical_and_eInfrastructures-data_storage",
+        "category-access_physical_and_eInfrastructures-instrument_and_equipment",
+        "category-access_physical_and_eInfrastructures-material_storage",
+        "category-access_physical_and_eInfrastructures-network",
+        "category-aggregators_and_integrators-aggregators_and_integrators",
+        "category-other-other",
+        "category-processing_and_analysis-data_analysis",
+        "category-processing_and_analysis-data_management",
+        "category-processing_and_analysis-measurement_and_materials_analysis",
+        "category-security_and_operations-operations_and_infrastructure_management_services",
+        "category-security_and_operations-security_and_identity",
+        "category-sharing_and_discovery-applications",
+        "category-sharing_and_discovery-data",
+        "category-sharing_and_discovery-development_resources",
+        "category-sharing_and_discovery-samples",
+        "category-sharing_and_discovery-scholarly_communication",
+        "category-sharing_and_discovery-software",
+        "category-training_and_support-consultancy_and_support",
+        "category-training_and_support-education_and_training"
+      ]
+    },
+    "SubcategoryId": {
+      "anyOf": [
+        {
+          "type": "string",
+          "enum": [
+            "subcategory-access_physical_and_eInfrastructures-compute-container_management",
+            "subcategory-access_physical_and_eInfrastructures-compute-hpc_access",
+            "subcategory-access_physical_and_eInfrastructures-compute-interactive_notebooks",
+            "subcategory-access_physical_and_eInfrastructures-compute-job_execution",
+            "subcategory-access_physical_and_eInfrastructures-compute-orchestration",
+            "subcategory-access_physical_and_eInfrastructures-compute-other",
+            "subcategory-access_physical_and_eInfrastructures-compute-serverless_applications_repository",
+            "subcategory-access_physical_and_eInfrastructures-compute-virtual_machine_management",
+            "subcategory-access_physical_and_eInfrastructures-compute-workload_management",
+            "subcategory-access_physical_and_eInfrastructures-data_storage-archive",
+            "subcategory-access_physical_and_eInfrastructures-data_storage-backup",
+            "subcategory-access_physical_and_eInfrastructures-data_storage-data",
+            "subcategory-access_physical_and_eInfrastructures-data_storage-digital_preservation",
+            "subcategory-access_physical_and_eInfrastructures-data_storage-disk",
+            "subcategory-access_physical_and_eInfrastructures-data_storage-file",
+            "subcategory-access_physical_and_eInfrastructures-data_storage-online",
+            "subcategory-access_physical_and_eInfrastructures-data_storage-other",
+            "subcategory-access_physical_and_eInfrastructures-data_storage-queue",
+            "subcategory-access_physical_and_eInfrastructures-data_storage-recovery",
+            "subcategory-access_physical_and_eInfrastructures-data_storage-replicated",
+            "subcategory-access_physical_and_eInfrastructures-data_storage-synchronised",
+            "subcategory-access_physical_and_eInfrastructures-instrument_and_equipment-chromatographer",
+            "subcategory-access_physical_and_eInfrastructures-instrument_and_equipment-cytometer",
+            "subcategory-access_physical_and_eInfrastructures-instrument_and_equipment-digitisation_equipment",
+            "subcategory-access_physical_and_eInfrastructures-instrument_and_equipment-geophysical",
+            "subcategory-access_physical_and_eInfrastructures-instrument_and_equipment-laser",
+            "subcategory-access_physical_and_eInfrastructures-instrument_and_equipment-microscopy",
+            "subcategory-access_physical_and_eInfrastructures-instrument_and_equipment-monument_maintenance_equipment",
+            "subcategory-access_physical_and_eInfrastructures-instrument_and_equipment-other",
+            "subcategory-access_physical_and_eInfrastructures-instrument_and_equipment-radiation",
+            "subcategory-access_physical_and_eInfrastructures-instrument_and_equipment-spectrometer",
+            "subcategory-access_physical_and_eInfrastructures-instrument_and_equipment-spectrophotometer",
+            "subcategory-access_physical_and_eInfrastructures-material_storage-archiving",
+            "subcategory-access_physical_and_eInfrastructures-material_storage-assembly",
+            "subcategory-access_physical_and_eInfrastructures-material_storage-disposal",
+            "subcategory-access_physical_and_eInfrastructures-material_storage-fulfilment",
+            "subcategory-access_physical_and_eInfrastructures-material_storage-other",
+            "subcategory-access_physical_and_eInfrastructures-material_storage-packaging",
+            "subcategory-access_physical_and_eInfrastructures-material_storage-preservation",
+            "subcategory-access_physical_and_eInfrastructures-material_storage-quality_inspecting",
+            "subcategory-access_physical_and_eInfrastructures-material_storage-repository",
+            "subcategory-access_physical_and_eInfrastructures-material_storage-reworking",
+            "subcategory-access_physical_and_eInfrastructures-material_storage-sorting",
+            "subcategory-access_physical_and_eInfrastructures-material_storage-warehousing",
+            "subcategory-access_physical_and_eInfrastructures-network-content_delivery_network",
+            "subcategory-access_physical_and_eInfrastructures-network-direct_connect",
+            "subcategory-access_physical_and_eInfrastructures-network-dns",
+            "subcategory-access_physical_and_eInfrastructures-network-exchange",
+            "subcategory-access_physical_and_eInfrastructures-network-load_balancer",
+            "subcategory-access_physical_and_eInfrastructures-network-other",
+            "subcategory-access_physical_and_eInfrastructures-network-traffic_manager",
+            "subcategory-access_physical_and_eInfrastructures-network-virtual_nework",
+            "subcategory-access_physical_and_eInfrastructures-network-vpn_gateway",
+            "subcategory-aggregators_and_integrators-aggregators_and_integrators-applications",
+            "subcategory-aggregators_and_integrators-aggregators_and_integrators-data",
+            "subcategory-aggregators_and_integrators-aggregators_and_integrators-other",
+            "subcategory-aggregators_and_integrators-aggregators_and_integrators-services",
+            "subcategory-aggregators_and_integrators-aggregators_and_integrators-software",
+            "subcategory-other-other-other",
+            "subcategory-processing_and_analysis-data_analysis-2d_3d_digitisation",
+            "subcategory-processing_and_analysis-data_analysis-artificial_intelligence",
+            "subcategory-processing_and_analysis-data_analysis-data_extrapolation",
+            "subcategory-processing_and_analysis-data_analysis-forecast",
+            "subcategory-processing_and_analysis-data_analysis-image_data_analysis",
+            "subcategory-processing_and_analysis-data_analysis-machine_learning",
+            "subcategory-processing_and_analysis-data_analysis-other",
+            "subcategory-processing_and_analysis-data_analysis-quality_assesment",
+            "subcategory-processing_and_analysis-data_analysis-visualization",
+            "subcategory-processing_and_analysis-data_analysis-workflows",
+            "subcategory-processing_and_analysis-data_management-access",
+            "subcategory-processing_and_analysis-data_management-annotation",
+            "subcategory-processing_and_analysis-data_management-anonymisation",
+            "subcategory-processing_and_analysis-data_management-brokering",
+            "subcategory-processing_and_analysis-data_management-digitisation",
+            "subcategory-processing_and_analysis-data_management-discovery",
+            "subcategory-processing_and_analysis-data_management-embargo",
+            "subcategory-processing_and_analysis-data_management-interlinking",
+            "subcategory-processing_and_analysis-data_management-maintenance",
+            "subcategory-processing_and_analysis-data_management-mining",
+            "subcategory-processing_and_analysis-data_management-other",
+            "subcategory-processing_and_analysis-data_management-persistent_identifier",
+            "subcategory-processing_and_analysis-data_management-preservation",
+            "subcategory-processing_and_analysis-data_management-publishing",
+            "subcategory-processing_and_analysis-data_management-registration",
+            "subcategory-processing_and_analysis-data_management-transfer",
+            "subcategory-processing_and_analysis-data_management-validation",
+            "subcategory-processing_and_analysis-measurement_and_materials_analysis-analysis",
+            "subcategory-processing_and_analysis-measurement_and_materials_analysis-characterisation",
+            "subcategory-processing_and_analysis-measurement_and_materials_analysis-maintenance_and_modification",
+            "subcategory-processing_and_analysis-measurement_and_materials_analysis-other",
+            "subcategory-processing_and_analysis-measurement_and_materials_analysis-production",
+            "subcategory-processing_and_analysis-measurement_and_materials_analysis-testing_and_validation",
+            "subcategory-processing_and_analysis-measurement_and_materials_analysis-validation",
+            "subcategory-processing_and_analysis-measurement_and_materials_analysis-workflows",
+            "subcategory-security_and_operations-operations_and_infrastructure_management_services-accounting",
+            "subcategory-security_and_operations-operations_and_infrastructure_management_services-analysis",
+            "subcategory-security_and_operations-operations_and_infrastructure_management_services-billing",
+            "subcategory-security_and_operations-operations_and_infrastructure_management_services-configuration",
+            "subcategory-security_and_operations-operations_and_infrastructure_management_services-coordination",
+            "subcategory-security_and_operations-operations_and_infrastructure_management_services-helpdesk",
+            "subcategory-security_and_operations-operations_and_infrastructure_management_services-monitoring",
+            "subcategory-security_and_operations-operations_and_infrastructure_management_services-order_management",
+            "subcategory-security_and_operations-operations_and_infrastructure_management_services-other",
+            "subcategory-security_and_operations-operations_and_infrastructure_management_services-transportation",
+            "subcategory-security_and_operations-operations_and_infrastructure_management_services-utilities",
+            "subcategory-security_and_operations-security_and_identity-certification_authority",
+            "subcategory-security_and_operations-security_and_identity-coordination",
+            "subcategory-security_and_operations-security_and_identity-firewall",
+            "subcategory-security_and_operations-security_and_identity-group_management",
+            "subcategory-security_and_operations-security_and_identity-identity_and_access_management",
+            "subcategory-security_and_operations-security_and_identity-other",
+            "subcategory-security_and_operations-security_and_identity-single_sign_on",
+            "subcategory-security_and_operations-security_and_identity-threat_protection",
+            "subcategory-security_and_operations-security_and_identity-tools",
+            "subcategory-security_and_operations-security_and_identity-user_authentication",
+            "subcategory-sharing_and_discovery-applications-applications_repository",
+            "subcategory-sharing_and_discovery-applications-business",
+            "subcategory-sharing_and_discovery-applications-collaboration",
+            "subcategory-sharing_and_discovery-applications-communication",
+            "subcategory-sharing_and_discovery-applications-education",
+            "subcategory-sharing_and_discovery-applications-other",
+            "subcategory-sharing_and_discovery-applications-productivity",
+            "subcategory-sharing_and_discovery-applications-social_networking",
+            "subcategory-sharing_and_discovery-applications-utilities",
+            "subcategory-sharing_and_discovery-data-clinical_trial_data",
+            "subcategory-sharing_and_discovery-data-data_archives",
+            "subcategory-sharing_and_discovery-data-epidemiological_data",
+            "subcategory-sharing_and_discovery-data-government_and_agency_data",
+            "subcategory-sharing_and_discovery-data-metadata",
+            "subcategory-sharing_and_discovery-data-online_service_data",
+            "subcategory-sharing_and_discovery-data-other",
+            "subcategory-sharing_and_discovery-data-scientific_research_data",
+            "subcategory-sharing_and_discovery-data-statistical_data",
+            "subcategory-sharing_and_discovery-development_resources-apis_repository_gateway",
+            "subcategory-sharing_and_discovery-development_resources-developer_tools",
+            "subcategory-sharing_and_discovery-development_resources-other",
+            "subcategory-sharing_and_discovery-development_resources-simulation_tools",
+            "subcategory-sharing_and_discovery-development_resources-software_development_kits",
+            "subcategory-sharing_and_discovery-development_resources-software_libraries",
+            "subcategory-sharing_and_discovery-samples-biological_samples",
+            "subcategory-sharing_and_discovery-samples-characterisation",
+            "subcategory-sharing_and_discovery-samples-chemical_compounds_library",
+            "subcategory-sharing_and_discovery-samples-other",
+            "subcategory-sharing_and_discovery-samples-preparation",
+            "subcategory-sharing_and_discovery-scholarly_communication-analysis",
+            "subcategory-sharing_and_discovery-scholarly_communication-assessment",
+            "subcategory-sharing_and_discovery-scholarly_communication-discovery",
+            "subcategory-sharing_and_discovery-scholarly_communication-other",
+            "subcategory-sharing_and_discovery-scholarly_communication-outreach",
+            "subcategory-sharing_and_discovery-scholarly_communication-preparation",
+            "subcategory-sharing_and_discovery-scholarly_communication-publication",
+            "subcategory-sharing_and_discovery-scholarly_communication-writing",
+            "subcategory-sharing_and_discovery-software-libraries",
+            "subcategory-sharing_and_discovery-software-other",
+            "subcategory-sharing_and_discovery-software-platform",
+            "subcategory-sharing_and_discovery-software-software_package",
+            "subcategory-sharing_and_discovery-software-software_repository",
+            "subcategory-training_and_support-consultancy_and_support-application_optimisation",
+            "subcategory-training_and_support-consultancy_and_support-application_porting",
+            "subcategory-training_and_support-consultancy_and_support-application_scaling",
+            "subcategory-training_and_support-consultancy_and_support-audit_and_assessment",
+            "subcategory-training_and_support-consultancy_and_support-benchmarking",
+            "subcategory-training_and_support-consultancy_and_support-calibration",
+            "subcategory-training_and_support-consultancy_and_support-certification",
+            "subcategory-training_and_support-consultancy_and_support-consulting",
+            "subcategory-training_and_support-consultancy_and_support-methodology_development",
+            "subcategory-training_and_support-consultancy_and_support-modeling_and_simulation",
+            "subcategory-training_and_support-consultancy_and_support-other",
+            "subcategory-training_and_support-consultancy_and_support-prototype_development",
+            "subcategory-training_and_support-consultancy_and_support-software_development",
+            "subcategory-training_and_support-consultancy_and_support-software_improvement",
+            "subcategory-training_and_support-consultancy_and_support-technology_transfer",
+            "subcategory-training_and_support-consultancy_and_support-testing",
+            "subcategory-training_and_support-education_and_training-in_house_courses",
+            "subcategory-training_and_support-education_and_training-online_courses",
+            "subcategory-training_and_support-education_and_training-open_registration_courses",
+            "subcategory-training_and_support-education_and_training-other",
+            "subcategory-training_and_support-education_and_training-related_training",
+            "subcategory-training_and_support-education_and_training-required_training",
+            "subcategory-training_and_support-education_and_training-training_platform",
+            "subcategory-training_and_support-education_and_training-training_tool"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "ScientificDomainId": {
+      "type": "string",
+      "enum": [
+        "scientific_domain-agricultural_sciences",
+        "scientific_domain-engineering_and_technology",
+        "scientific_domain-generic",
+        "scientific_domain-humanities",
+        "scientific_domain-medical_and_health_sciences",
+        "scientific_domain-natural_sciences",
+        "scientific_domain-other",
+        "scientific_domain-social_sciences"
+      ]
+    },
+    "ScientificSubdomainId": {
+      "anyOf": [
+        {
+          "type": "string",
+          "enum": [
+            "scientific_subdomain-agricultural_sciences-agricultural_biotechnology",
+            "scientific_subdomain-agricultural_sciences-agriculture_forestry_and_fisheries",
+            "scientific_subdomain-agricultural_sciences-animal_and_dairy_sciences",
+            "scientific_subdomain-agricultural_sciences-other_agricultural_sciences",
+            "scientific_subdomain-agricultural_sciences-veterinary_sciences",
+            "scientific_subdomain-engineering_and_technology-chemical_engineering",
+            "scientific_subdomain-engineering_and_technology-civil_engineering",
+            "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering",
+            "scientific_subdomain-engineering_and_technology-environmental_biotechnology",
+            "scientific_subdomain-engineering_and_technology-environmental_engineering",
+            "scientific_subdomain-engineering_and_technology-industrial_biotechnology",
+            "scientific_subdomain-engineering_and_technology-materials_engineering",
+            "scientific_subdomain-engineering_and_technology-mechanical_engineering",
+            "scientific_subdomain-engineering_and_technology-medical_engineering",
+            "scientific_subdomain-engineering_and_technology-nanotechnology",
+            "scientific_subdomain-engineering_and_technology-other_engineering_and_technology_sciences",
+            "scientific_subdomain-generic-generic",
+            "scientific_subdomain-humanities-arts",
+            "scientific_subdomain-humanities-history_and_archaeology",
+            "scientific_subdomain-humanities-languages_and_literature",
+            "scientific_subdomain-humanities-other_humanities",
+            "scientific_subdomain-humanities-philosophy_ethics_and_religion",
+            "scientific_subdomain-medical_and_health_sciences-basic_medicine",
+            "scientific_subdomain-medical_and_health_sciences-clinical_medicine",
+            "scientific_subdomain-medical_and_health_sciences-health_sciences",
+            "scientific_subdomain-medical_and_health_sciences-medical_biotechnology",
+            "scientific_subdomain-medical_and_health_sciences-other_medical_sciences",
+            "scientific_subdomain-natural_sciences-biological_sciences",
+            "scientific_subdomain-natural_sciences-chemical_sciences",
+            "scientific_subdomain-natural_sciences-computer_and_information_sciences",
+            "scientific_subdomain-natural_sciences-earth_and_related_environmental_sciences",
+            "scientific_subdomain-natural_sciences-mathematics",
+            "scientific_subdomain-natural_sciences-other_natural_sciences",
+            "scientific_subdomain-natural_sciences-physical_sciences",
+            "scientific_subdomain-other-other",
+            "scientific_subdomain-social_sciences-economics_and_business",
+            "scientific_subdomain-social_sciences-educational_sciences",
+            "scientific_subdomain-social_sciences-law",
+            "scientific_subdomain-social_sciences-media_and_communications",
+            "scientific_subdomain-social_sciences-other_social_sciences",
+            "scientific_subdomain-social_sciences-political_sciences",
+            "scientific_subdomain-social_sciences-psychology",
+            "scientific_subdomain-social_sciences-social_and_economic_geography",
+            "scientific_subdomain-social_sciences-sociology"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "Tag": {
+      "type": "string",
+      "minLength": 1
+    },
+    "AlternativeIdentifier": {
+      "type": "object",
+      "description": "Alternative identifier for the service.",
+      "additionalProperties": false,
+      "required": [
+        "value"
+      ],
+      "properties": {
+        "type": {
+          "$ref": "#/$defs/NonEmptyString",
+          "description": "Type of the identifier (e.g. doi, hdl)."
+        },
+        "value": {
+          "$ref": "#/$defs/NonEmptyString",
+          "description": "Identifier value."
+        }
+      }
+    },
+    "ScientificDomainEntry": {
+      "type": "object",
+      "description": "Scientific domain associated with the service.",
+      "required": [
+        "scientificDomain"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "scientificDomain": {
+          "$ref": "#/$defs/ScientificDomainId"
+        },
+        "scientificSubdomain": {
+          "$ref": "#/$defs/ScientificSubdomainId"
+        }
+      }
+    },
+    "ServiceCategoryEntry": {
+      "type": "object",
+      "description": "Service category associated with the service.",
+      "required": [
+        "category"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "category": {
+          "$ref": "#/$defs/CategoryId"
+        },
+        "subcategory": {
+          "$ref": "#/$defs/SubcategoryId"
+        }
+      }
+    },
+    "Service": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "webpage",
+        "description",
+        "scientificDomains",
+        "categories",
+        "targetUsers",
+        "languageAvailabilities",
+        "trl",
+        "orderType"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/NonEmptyString",
+          "description": "Service identifier (same as service bundle ID)."
+        },
+        "alternativeIdentifiers": {
+          "type": "array",
+          "description": "Alternative identifiers for the service.",
+          "items": {
+            "$ref": "#/$defs/AlternativeIdentifier"
+          },
+          "minItems": 1
+        },
+        "abbreviation": {
+          "$ref": "#/$defs/NonEmptyString",
+          "description": "Abbreviation of the service name."
+        },
+        "name": {
+          "$ref": "#/$defs/NonEmptyString",
+          "description": "Full name of the service."
+        },
+        "webpage": {
+          "$ref": "#/$defs/URI",
+          "description": "URL of the service webpage."
+        },
+        "description": {
+          "$ref": "#/$defs/NonEmptyString",
+          "description": "Detailed description of the service."
+        },
+        "tagline": {
+          "$ref": "#/$defs/NonEmptyString",
+          "description": "Short tagline summarising the service."
+        },
+        "logo": {
+          "$ref": "#/$defs/URI",
+          "description": "URL of the service logo."
+        },
+        "scientificDomains": {
+          "type": "array",
+          "description": "Scientific domains applicable to the service.",
+          "items": {
+            "$ref": "#/$defs/ScientificDomainEntry"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "categories": {
+          "type": "array",
+          "description": "Service categories.",
+          "items": {
+            "$ref": "#/$defs/ServiceCategoryEntry"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "targetUsers": {
+          "type": "array",
+          "description": "Intended target users.",
+          "items": {
+            "$ref": "#/$defs/TargetUser"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "accessTypes": {
+          "$ref": "#/$defs/AccessMode",
+          "description": "Access mode provided by the service."
+        },
+        "tags": {
+          "type": "array",
+          "description": "Free-text tags for the service.",
+          "items": {
+            "$ref": "#/$defs/Tag"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "languageAvailabilities": {
+          "type": "array",
+          "description": "Languages available for the service (ISO 639-1 codes).",
+          "items": {
+            "$ref": "#/$defs/LanguageCode"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "helpdeskEmail": {
+          "$ref": "#/$defs/Email",
+          "description": "Helpdesk contact email."
+        },
+        "securityContactEmail": {
+          "$ref": "#/$defs/Email",
+          "description": "Security contact email."
+        },
+        "trl": {
+          "$ref": "#/$defs/TRL",
+          "description": "Technology readiness level."
+        },
+        "userManual": {
+          "$ref": "#/$defs/URI",
+          "description": "URL for the user manual."
+        },
+        "termsOfUse": {
+          "$ref": "#/$defs/URI",
+          "description": "URL for the terms of use."
+        },
+        "privacyPolicy": {
+          "$ref": "#/$defs/URI",
+          "description": "URL for the privacy policy."
+        },
+        "accessPolicy": {
+          "$ref": "#/$defs/URI",
+          "description": "URL for the access policy."
+        },
+        "orderType": {
+          "$ref": "#/$defs/OrderType",
+          "description": "Ordering modality for the service."
+        }
+      }
+    }
+  }
+}

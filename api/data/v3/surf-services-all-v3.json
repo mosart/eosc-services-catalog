@@ -1,0 +1,2680 @@
+[
+  {
+    "id": "surf-node:servicebundle:cloud-research-consultancy",
+    "service": {
+      "id": "surf-node:servicebundle:cloud-research-consultancy",
+      "abbreviation": "CRC",
+      "name": "Cloud Research Consultancy",
+      "webpage": "https://www.surf.nl/en/services/compute/cloud-research-consultancy",
+      "description": "Are you looking for a tailor-made solution for your complicated research project? Then enlist additional support. We develop IT solutions and offer long-term operational support on SURF's private cloud or on commercial clouds such as AWS and Azure.",
+      "tagline": "Get advice on tailor-made solutions",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-access_physical_and_eInfrastructures-compute",
+          "subcategory": "subcategory-access_physical_and_eInfrastructures-compute-workload_management"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "cloud",
+        "compute",
+        "consultancy",
+        "research",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "servicedesk@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/compute/cloud-research-consultancy",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://www.surf.nl/en/access-to-compute-services",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:high-performance-data-processing",
+    "service": {
+      "id": "surf-node:servicebundle:high-performance-data-processing",
+      "abbreviation": "HPDP",
+      "name": "High-performance data processing",
+      "webpage": "https://www.surf.nl/en/services/compute/high-performance-data-processing",
+      "description": "Do you want to process and store large amounts of data? Our team of experts will support you in using our high-throughput data processing systems and storage solutions.",
+      "tagline": "For large, structured datasets",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-access_physical_and_eInfrastructures-compute",
+          "subcategory": "subcategory-access_physical_and_eInfrastructures-compute-workload_management"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "compute",
+        "data",
+        "high",
+        "performance",
+        "processing",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "servicedesk@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/compute/high-performance-data-processing",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://www.surf.nl/en/access-to-compute-services",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:hpc-cloud",
+    "service": {
+      "id": "surf-node:servicebundle:hpc-cloud",
+      "abbreviation": "HC",
+      "name": "HPC Cloud",
+      "webpage": "https://www.surf.nl/en/services/compute/hpc-cloud",
+      "description": "With HPC Cloud, you have control over your computing infrastructure, for yourself or your project team. Depending on your needs, you can expand the infrastructure. You can use different operating systems and analysis software. HPC Cloud is hosted in our data centre and you get access via SURF Research Cloud.",
+      "tagline": "Flexible",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-access_physical_and_eInfrastructures-compute",
+          "subcategory": "subcategory-access_physical_and_eInfrastructures-compute-workload_management"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "cloud",
+        "compute",
+        "hpc",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "servicedesk@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/compute/hpc-cloud",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://www.surf.nl/en/access-to-compute-services",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:jupyter-for-education",
+    "service": {
+      "id": "surf-node:servicebundle:jupyter-for-education",
+      "abbreviation": "JFE",
+      "name": "Jupyter for Education",
+      "webpage": "https://www.surf.nl/en/services/compute/jupyter-for-education",
+      "description": "Ideal for programming education: only a browser needed",
+      "tagline": "Flexible software environment",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-access_physical_and_eInfrastructures-compute",
+          "subcategory": "subcategory-access_physical_and_eInfrastructures-compute-workload_management"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "compute",
+        "education",
+        "for",
+        "jupyter",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "servicedesk@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/compute/jupyter-for-education",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://servicedesk.surf.nl/",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:lumi",
+    "service": {
+      "id": "surf-node:servicebundle:lumi",
+      "abbreviation": "L",
+      "name": "LUMI: One of Europe’s fastest supercomputers",
+      "webpage": "https://www.surf.nl/en/services/compute/lumi",
+      "description": "LUMI: One of Europe’s fastest supercomputers",
+      "tagline": "Unprecedented scale",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-access_physical_and_eInfrastructures-compute",
+          "subcategory": "subcategory-access_physical_and_eInfrastructures-compute-workload_management"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "compute",
+        "lumi",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "servicedesk@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/compute/lumi",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://www.surf.nl/en/access-to-compute-services",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:snellius-the-national-supercomputer",
+    "service": {
+      "id": "surf-node:servicebundle:snellius-the-national-supercomputer",
+      "abbreviation": "STNS",
+      "name": "Snellius: the National Supercomputer",
+      "webpage": "https://www.surf.nl/en/services/compute/snellius-the-national-supercomputer",
+      "description": "Would you like to use the largest system in the Netherlands in terms of high-performance computing, fast processors and GPUs, a very fast internal network, lots of memory space and the ability to process large data sets? Meet our National Supercomputer Snellius.",
+      "tagline": "Superfast",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-access_physical_and_eInfrastructures-compute",
+          "subcategory": "subcategory-access_physical_and_eInfrastructures-compute-workload_management"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "compute",
+        "national",
+        "snellius",
+        "supercomputer",
+        "surf",
+        "the"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "servicedesk@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/compute/snellius-the-national-supercomputer",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://www.surf.nl/en/access-to-compute-services",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:surf-research-cloud",
+    "service": {
+      "id": "surf-node:servicebundle:surf-research-cloud",
+      "abbreviation": "SRC",
+      "name": "SURF Research Cloud",
+      "webpage": "https://www.surf.nl/en/services/compute/surf-research-cloud",
+      "description": "SURF Research Cloud is a portal where you easily build a virtual research environment. You can use preconfigured workspaces and datasets or add them yourself. Institutions, research communities and suppliers can contribute to Research Cloud's functionality and catalogue by integrating their computing and data services.",
+      "tagline": "Create reproducible research environments",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-access_physical_and_eInfrastructures-compute",
+          "subcategory": "subcategory-access_physical_and_eInfrastructures-compute-workload_management"
+        }
+      ],
+      "targetUsers": [
+        "target_user-providers",
+        "target_user-research_communities",
+        "target_user-research_infrastructure_managers",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "cloud",
+        "compute",
+        "research",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "ivar.janmaat@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/compute/surf-research-cloud",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://www.surf.nl/en/access-to-compute-services",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:edubadges",
+    "service": {
+      "id": "surf-node:servicebundle:edubadges",
+      "abbreviation": "E",
+      "name": "edubadges",
+      "webpage": "https://www.surf.nl/en/services/flexible-education/edubadges",
+      "description": "edubadges is the platform for digital certificates for Dutch education. With an edubadge, you give students or workers proof of the knowledge and skills they have acquired. An edubadge is issued digitally within SURF's secure and reliable platform.",
+      "tagline": "Recognition of learning outcomes achieved",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-sharing_and_discovery-applications",
+          "subcategory": "subcategory-sharing_and_discovery-applications-applications_repository"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "edubadges",
+        "flexible-education",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "rob.vanderwerff@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/flexible-education/edubadges",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://edubadges.nl/login",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:kies-op-maat",
+    "service": {
+      "id": "surf-node:servicebundle:kies-op-maat",
+      "abbreviation": "KOM",
+      "name": "Kies op Maat",
+      "webpage": "https://www.surf.nl/en/services/flexible-education/kies-op-maat",
+      "description": "Kies Op Maat offers a wide range of education from over 30 institutions. Students easily register for a minor or subject at another educational institution. This way, we give students customisation when it comes to their studies, and it makes studying outside their own institution possible.",
+      "tagline": "Wide range of minors and subjects",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-sharing_and_discovery-applications",
+          "subcategory": "subcategory-sharing_and_discovery-applications-applications_repository"
+        }
+      ],
+      "targetUsers": [
+        "target_user-researchers",
+        "target_user-research_projects",
+        "target_user-students"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "flexible-education",
+        "kies",
+        "maat",
+        "op",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "NL"
+      ],
+      "helpdeskEmail": "ruth.bootsma@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/flexible-education/kies-op-maat",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://www.kiesopmaat.nl/",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:surfeduhub",
+    "service": {
+      "id": "surf-node:servicebundle:surfeduhub",
+      "abbreviation": "S",
+      "name": "SURFeduhub",
+      "webpage": "https://www.surf.nl/en/services/flexible-education/surfeduhub",
+      "description": "SURFeduhub is the platform for sharing educational data between Dutch educational institutions. Safely and via open standards. For example, students can easily view the educational programmes of their own institution and other institutions, timetables or study progress information.",
+      "tagline": "Various teaching dates available to students",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-sharing_and_discovery-applications",
+          "subcategory": "subcategory-sharing_and_discovery-applications-applications_repository"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "flexible-education",
+        "surf",
+        "surfeduhub"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "surfeduhub@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/flexible-education/surfeduhub",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://www.surf.nl/en/about/contact-with-surf",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:edunl",
+    "service": {
+      "id": "surf-node:servicebundle:edunl",
+      "abbreviation": "E",
+      "name": "edu.nl",
+      "webpage": "https://www.surf.nl/en/services/identity-access-management/edunl",
+      "description": "edu.nl is the privacy-friendly URL shortener for education and research. Edu.nl's shortened links do not store visitors' personal data.",
+      "tagline": "Simple creation of shortened URLs and QR codes",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-security_and_operations-security_and_identity",
+          "subcategory": "subcategory-security_and_operations-security_and_identity-user_authentication"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "edunl",
+        "identity-access-management",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "kort@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/identity-access-management/edunl",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://edu.nl/",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:surf-research-access-management",
+    "service": {
+      "id": "surf-node:servicebundle:surf-research-access-management",
+      "abbreviation": "SRAM",
+      "name": "SURF Research Access Management",
+      "webpage": "https://www.surf.nl/en/services/identity-access-management/surf-research-access-management",
+      "description": "Easy, efficient and secure login for researchers. An optimised authorisation and authentication service: SURF Research Access Management.",
+      "tagline": "Insight and control",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-security_and_operations-security_and_identity",
+          "subcategory": "subcategory-security_and_operations-security_and_identity-user_authentication"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "access",
+        "identity-access-management",
+        "management",
+        "research",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "logan.ayliffe@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/identity-access-management/surf-research-access-management",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://edu.nl/3wu74",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:surfconext",
+    "service": {
+      "id": "surf-node:servicebundle:surfconext",
+      "abbreviation": "S",
+      "name": "SURFconext",
+      "webpage": "https://www.surf.nl/en/services/identity-access-management/surfconext",
+      "description": "Let your users log in to all the cloud services your institution uses with one username and password. Both for services that everyone uses and services for small specialist teams. Secure, easy and privacy-friendly.",
+      "tagline": "One interface for all cloud services",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-security_and_operations-security_and_identity",
+          "subcategory": "subcategory-security_and_operations-security_and_identity-user_authentication"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "identity-access-management",
+        "surf",
+        "surfconext"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "info@surfconext.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/identity-access-management/surfconext",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://www.surf.nl/en/about/contact-with-surf",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:surfsecureid",
+    "service": {
+      "id": "surf-node:servicebundle:surfsecureid",
+      "abbreviation": "S",
+      "name": "SURFsecureID",
+      "webpage": "https://www.surf.nl/en/services/identity-access-management/surfsecureid",
+      "description": "With SURFsecureID you add an extra step to logging in: the user logs in with a username, password and a second factor, such as a mobile app (tiqr). SURFsecureID also has different levels of reliability: your institution can choose which level is desired for a particular application. You can also combine SURFsecureID with Microsoft Azure MFA.",
+      "tagline": "Additional security",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-security_and_operations-security_and_identity",
+          "subcategory": "subcategory-security_and_operations-security_and_identity-user_authentication"
+        }
+      ],
+      "targetUsers": [
+        "target_user-providers",
+        "target_user-research_communities",
+        "target_user-research_infrastructure_managers",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "identity-access-management",
+        "surf",
+        "surfsecureid"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "logan.ayliffe@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/identity-access-management/surfsecureid",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://servicedesk.surf.nl/wiki/spaces/IAM/pages/74222665/SURFsecureID",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:eduid",
+    "service": {
+      "id": "surf-node:servicebundle:eduid",
+      "abbreviation": "E",
+      "name": "eduID",
+      "webpage": "https://www.surf.nl/en/services/identity-and-access-management/eduid",
+      "description": "eduID is an institution-independent digital identity that allows students to access any educational institution: before, during and after their studies. You can also use eduID to give researchers, internship supervisors, alumni, professionals and other external parties secure access to your institution's applications.",
+      "tagline": "Reducing administrative burden",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-security_and_operations-security_and_identity",
+          "subcategory": "subcategory-security_and_operations-security_and_identity-user_authentication"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "eduid",
+        "identity-and-access-management",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "peter.clijsters@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/identity-and-access-management/eduid",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/136183907/eduID",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:eduroam",
+    "service": {
+      "id": "surf-node:servicebundle:eduroam",
+      "abbreviation": "E",
+      "name": "eduroam",
+      "webpage": "https://www.surf.nl/en/services/network-connectivity/eduroam",
+      "description": "With eduroam, students, teachers, staff and researchers can easily and securely access your own institution's fixed and wireless network. But also at all other institutions that offer eduroam.",
+      "tagline": "More than 30,000 locations in over 100 countries",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-access_physical_and_eInfrastructures-network",
+          "subcategory": "subcategory-access_physical_and_eInfrastructures-network-virtual_nework"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "eduroam",
+        "network-connectivity",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "beheer@eduroam.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/network-connectivity/eduroam",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://dashboard.surf.nl",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:eduroam-visitor-access",
+    "service": {
+      "id": "surf-node:servicebundle:eduroam-visitor-access",
+      "abbreviation": "EVA",
+      "name": "eduroam Visitor Access",
+      "webpage": "https://www.surf.nl/en/services/network-connectivity/eduroam-visitor-access",
+      "description": "With eduroam Visitor Access, you easily create temporary eduroam accounts for your visitors. They get access to the same secure and reliable Wi-Fi network as your own users. It doesn't matter whether they are one person or a large group.",
+      "tagline": "Visitors have secure access to your network",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-access_physical_and_eInfrastructures-network",
+          "subcategory": "subcategory-access_physical_and_eInfrastructures-network-virtual_nework"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "access",
+        "eduroam",
+        "network-connectivity",
+        "surf",
+        "visitor"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "eva@eduroam.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/network-connectivity/eduroam-visitor-access",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://dashboard.surfnet.nl",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:evpn",
+    "service": {
+      "id": "surf-node:servicebundle:evpn",
+      "abbreviation": "E",
+      "name": "EVPN",
+      "webpage": "https://www.surf.nl/en/services/network-connectivity/evpn",
+      "description": "A super-fast, exclusive connection. Need a super-fast, highly reliable connection to another institution, data centre or service provider, for example? With SURFlichtpaden you create an exclusive, direct connection outside the public Internet. Our lightpaths offer extra security, reliability and high, guaranteed capacity.",
+      "tagline": "Your own direct connection",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-access_physical_and_eInfrastructures-network",
+          "subcategory": "subcategory-access_physical_and_eInfrastructures-network-virtual_nework"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "evpn",
+        "network-connectivity",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "sander.klemann@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/network-connectivity/evpn",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "mailto:klantsupport@surf.nl",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:internet",
+    "service": {
+      "id": "surf-node:servicebundle:internet",
+      "abbreviation": "I",
+      "name": "Internet",
+      "webpage": "https://www.surf.nl/en/services/network-connectivity/internet",
+      "description": "SURFinternet offers Dutch education and research a faster, reliable internet connection, from 1 to 100 Gigabits per second.",
+      "tagline": "Stable, fast internet",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-access_physical_and_eInfrastructures-network",
+          "subcategory": "subcategory-access_physical_and_eInfrastructures-network-virtual_nework"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "internet",
+        "network-connectivity",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "sander.klemann@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/network-connectivity/internet",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/111706236/SURF+Network",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:iotroam",
+    "service": {
+      "id": "surf-node:servicebundle:iotroam",
+      "abbreviation": "I",
+      "name": "iotroam",
+      "webpage": "https://www.surf.nl/en/services/network-connectivity/iotroam",
+      "description": "a;kfjnask;djf",
+      "tagline": "Connect your own IoT devices",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-access_physical_and_eInfrastructures-network",
+          "subcategory": "subcategory-access_physical_and_eInfrastructures-network-virtual_nework"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "iotroam",
+        "network-connectivity",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "thomas.esman@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/network-connectivity/iotroam",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://dashboard.surfnet.nl/",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:netherlight",
+    "service": {
+      "id": "surf-node:servicebundle:netherlight",
+      "abbreviation": "N",
+      "name": "NetherLight",
+      "webpage": "https://www.surf.nl/en/services/network-connectivity/netherlight",
+      "description": "NetherLight is a crucial node for exchanging research traffic. It is an open network exchange located in Amsterdam that connects research and education communities (European and international) to each other. It also connects Dutch R&E communities to the services of various cloud providers.",
+      "tagline": "High-speed international connectivity for Dutch researchers",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-access_physical_and_eInfrastructures-network",
+          "subcategory": "subcategory-access_physical_and_eInfrastructures-network-virtual_nework"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "netherlight",
+        "network-connectivity",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "karin.wessel@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/network-connectivity/netherlight",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "mailto:karin.wessel@surf.nl?subject=Request%20connectitvity%20Netherlight",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:secondary-site-connection",
+    "service": {
+      "id": "surf-node:servicebundle:secondary-site-connection",
+      "abbreviation": "SSC",
+      "name": "Secondary Site Connection",
+      "webpage": "https://www.surf.nl/en/services/network-connectivity/secondary-site-connection",
+      "description": "Connect all your locations to the SURF network",
+      "tagline": "SURF services in branch offices",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-access_physical_and_eInfrastructures-network",
+          "subcategory": "subcategory-access_physical_and_eInfrastructures-network-virtual_nework"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "connection",
+        "network-connectivity",
+        "secondary",
+        "site",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "sander.klemann@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/network-connectivity/secondary-site-connection",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/111706383/v.+Dienstcomponent+-+Secondary+Site+Connection",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:surfdomains",
+    "service": {
+      "id": "surf-node:servicebundle:surfdomains",
+      "abbreviation": "S",
+      "name": "SURFdomains",
+      "webpage": "https://www.surf.nl/en/services/network-connectivity/surfdomains",
+      "description": "As an ICT administrator, you register and transfer internet domains easily via SURFdomeinen. Managing the DNS is also easy, via the online portal.",
+      "tagline": "Make changes in real time",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-access_physical_and_eInfrastructures-network",
+          "subcategory": "subcategory-access_physical_and_eInfrastructures-network-virtual_nework"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "network-connectivity",
+        "surf",
+        "surfdomains"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "dns-beheer@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/network-connectivity/surfdomains",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://www.surfdomeinen.nl/login.php",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:surffirewall",
+    "service": {
+      "id": "surf-node:servicebundle:surffirewall",
+      "abbreviation": "S",
+      "name": "SURFfirewall",
+      "webpage": "https://www.surf.nl/en/services/network-connectivity/surffirewall",
+      "description": "SURFfirewall takes procurement and management of your firewall out of your hands. For a fixed monthly fee, you get a firewall that we manage and that is scalable in capacity and functionality. You no longer have to worry about it. You only manage the rules yourself, via our user-friendly portal. So you stay in control.",
+      "tagline": "Make use of the central SURF tender",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-access_physical_and_eInfrastructures-network",
+          "subcategory": "subcategory-access_physical_and_eInfrastructures-network-virtual_nework"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "network-connectivity",
+        "surf",
+        "surffirewall"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "surffirewall-beheer@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/network-connectivity/surffirewall",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "mailto:surffirewall-beheer@surf.nl",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:surfwireless",
+    "service": {
+      "id": "surf-node:servicebundle:surfwireless",
+      "abbreviation": "S",
+      "name": "SURFwireless",
+      "webpage": "https://www.surf.nl/en/services/network-connectivity/surfwireless",
+      "description": "Your users want a fast Wi-Fi network that is available anytime, anywhere. Purchasing and maintaining such a network requires a lot of time and knowledge. SURFwireless offers Wifi as a Service. This provides you with a reliable, high-quality wifi6 network, which you can use for years to come.",
+      "tagline": "Wi-Fi available anytime, anywhere",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-access_physical_and_eInfrastructures-network",
+          "subcategory": "subcategory-access_physical_and_eInfrastructures-network-virtual_nework"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "network-connectivity",
+        "surf",
+        "surfwireless"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "eelco.devos@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/network-connectivity/surfwireless",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "mailto:eelco.devos@surf.nl",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:content-procurement",
+    "service": {
+      "id": "surf-node:servicebundle:content-procurement",
+      "abbreviation": "CP",
+      "name": "Content procurement",
+      "webpage": "https://www.surf.nl/en/services/procurement-contracting/content-procurement",
+      "description": "Working with partners UKB and SHB, researchers and students can access content on all (scientific) journals and databases anytime, anywhere.",
+      "tagline": "We handle the negotiations",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-security_and_operations-operations_and_infrastructure_management_services",
+          "subcategory": "subcategory-security_and_operations-operations_and_infrastructure_management_services-accounting"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "content",
+        "procurement",
+        "procurement-contracting",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "content-inkoop@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/procurement-contracting/content-procurement",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://www.surf.nl/en/themes/procurement-contracting/content-procurement",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:it-procurement",
+    "service": {
+      "id": "surf-node:servicebundle:it-procurement",
+      "abbreviation": "IP",
+      "name": "IT procurement",
+      "webpage": "https://www.surf.nl/en/services/procurement-delivery/it-procurement",
+      "description": "Joint purchasing on the best terms",
+      "tagline": "Best (price) conditions",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-security_and_operations-operations_and_infrastructure_management_services",
+          "subcategory": "subcategory-security_and_operations-operations_and_infrastructure_management_services-accounting"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "it",
+        "procurement",
+        "procurement-delivery",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "maaike.hazewinkel@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/procurement-delivery/it-procurement",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://mijn.surf.nl/",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:surf-vendor-compliance",
+    "service": {
+      "id": "surf-node:servicebundle:surf-vendor-compliance",
+      "abbreviation": "SVC",
+      "name": "SURF Vendor Compliance",
+      "webpage": "https://www.surf.nl/en/services/procurement-delivery/surf-vendor-compliance",
+      "description": "Through SURF, the members make joint agreements with ICT and content suppliers on the supply and purchase of products and services. In this way, the members jointly ensure scale and an efficient point of contact for suppliers.",
+      "tagline": "Joint action",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-security_and_operations-operations_and_infrastructure_management_services",
+          "subcategory": "subcategory-security_and_operations-operations_and_infrastructure_management_services-accounting"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "compliance",
+        "procurement-delivery",
+        "surf",
+        "vendor"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "vendorcompliance@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/procurement-delivery/surf-vendor-compliance",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://forms.office.com/pages/responsepage.aspx?id=n0rQihAaCEiUgLii-KDaFA6Hhu1PBvdPpMFZud3NIbNUNjk1VldENzlJN1dLTUxLUkNMTUs1UTlLVS4u&origin=lprLink&route=shorturl",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:surfcumulus",
+    "service": {
+      "id": "surf-node:servicebundle:surfcumulus",
+      "abbreviation": "S",
+      "name": "SURFcumulus",
+      "webpage": "https://www.surf.nl/en/services/procurement-delivery/surfcumulus",
+      "description": "Do you also want to legitimately and securely deploy cloud services from top providers? Then use SURFcumulus!",
+      "tagline": "No own tender",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-security_and_operations-operations_and_infrastructure_management_services",
+          "subcategory": "subcategory-security_and_operations-operations_and_infrastructure_management_services-accounting"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "procurement-delivery",
+        "surf",
+        "surfcumulus"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "surfcumulus@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/procurement-delivery/surfcumulus",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://www.surf.nl/en/about/contact-with-surf",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:surfspot",
+    "service": {
+      "id": "surf-node:servicebundle:surfspot",
+      "abbreviation": "S",
+      "name": "SURFspot",
+      "webpage": "https://www.surf.nl/en/services/procurement-delivery/surfspot",
+      "description": "SURFspot is the ict webstore with special education discounts on software and hardware for students and staff of educational institutions, UMCs, libraries and museums. We offer a choice of over 450 items from renowned suppliers such as Adobe, IBM, Norton, McAfee and Microsoft. Discounts run up to 90% compared to recommended retail prices.",
+      "tagline": "Wide range",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-security_and_operations-operations_and_infrastructure_management_services",
+          "subcategory": "subcategory-security_and_operations-operations_and_infrastructure_management_services-accounting"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "procurement-delivery",
+        "surf",
+        "surfspot"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "info@surfspot.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/procurement-delivery/surfspot",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://www.surfspot.nl",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:auteursrechtennl",
+    "service": {
+      "id": "surf-node:servicebundle:auteursrechtennl",
+      "abbreviation": "A",
+      "name": "Auteursrechten.nl",
+      "webpage": "https://www.surf.nl/en/services/publishing/auteursrechtennl",
+      "description": "Auteursrechten.nl offers you 1 central place to go for reliable information on copyright issues and related laws and regulations. You will find legal information, practical resources and tools.",
+      "tagline": "Up-to-date legal information",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-sharing_and_discovery-data",
+          "subcategory": "subcategory-sharing_and_discovery-data-statistical_data"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "auteursrechtennl",
+        "publishing",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "ellemieke.sigtermans@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/publishing/auteursrechtennl",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://www.auteursrechten.nl/",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:copyrightcheck",
+    "service": {
+      "id": "surf-node:servicebundle:copyrightcheck",
+      "abbreviation": "C",
+      "name": "CopyrightCheck",
+      "webpage": "https://www.surf.nl/en/services/publishing/copyrightcheck",
+      "description": "CopyrightCheck analyses learning materials provided to students in the digital learning environment (LMS). These are automatically classified as copyrighted, open access or proprietary. This provides insight into the use of digital learning materials.",
+      "tagline": "Raising awareness among teachers about copyright",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-sharing_and_discovery-data",
+          "subcategory": "subcategory-sharing_and_discovery-data-statistical_data"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "copyrightcheck",
+        "publishing",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "mirjam.buttner@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/publishing/copyrightcheck",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "mailto:copyrightcheck@surf.nl",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:edusources",
+    "service": {
+      "id": "surf-node:servicebundle:edusources",
+      "abbreviation": "E",
+      "name": "edusources",
+      "webpage": "https://www.surf.nl/en/services/publishing/edusources",
+      "description": "Share, use and collaborate on digital OERs to enrich education. Go to edusources.nl, the starting point for OERs in education, if you are looking for information about OERs and how you can organise this within your institution and education, about subject communities that collaborate on learning materials or about OERs that are already available.",
+      "tagline": "Support to teachers and institutions",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-sharing_and_discovery-data",
+          "subcategory": "subcategory-sharing_and_discovery-data-statistical_data"
+        }
+      ],
+      "targetUsers": [
+        "target_user-publishers",
+        "target_user-research_communities",
+        "target_user-research_projects",
+        "target_user-researchers",
+        "target_user-students"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "edusources",
+        "publishing",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "info@edusources.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/publishing/edusources",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://edusources.nl/",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:hbo-kennisbank",
+    "service": {
+      "id": "surf-node:servicebundle:hbo-kennisbank",
+      "abbreviation": "HK",
+      "name": "HBO Kennisbank",
+      "webpage": "https://www.surf.nl/en/services/publishing/hbo-kennisbank",
+      "description": "In the HBO Knowledge Bank, you will find more than 60,000 publications by professors, lecturer-researchers and students of universities of applied sciences. Reuse them to improve your own research or teaching. Of course, you can also upload your own work to inspire others.",
+      "tagline": "More than 60,000 open access publications",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-sharing_and_discovery-data",
+          "subcategory": "subcategory-sharing_and_discovery-data-statistical_data"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "hbo",
+        "kennisbank",
+        "publishing",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "info@edusources.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/publishing/hbo-kennisbank",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://www.hbo-kennisbank.nl/index",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:persistent-identifiers",
+    "service": {
+      "id": "surf-node:servicebundle:persistent-identifiers",
+      "abbreviation": "PI",
+      "name": "Persistent Identifiers",
+      "webpage": "https://www.surf.nl/en/services/publishing/persistent-identifiers",
+      "description": "Persistent Identifiers (PIDs) ensure that your objects, such as research data, can always be found and remain so. PIDs can be compared to an ISBN number for books. Even if the location or underlying infrastructure changes, the reference remains intact.",
+      "tagline": "Make your data FAIR",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-sharing_and_discovery-data",
+          "subcategory": "subcategory-sharing_and_discovery-data-statistical_data"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "identifiers",
+        "persistent",
+        "publishing",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "servicedesk@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/publishing/persistent-identifiers",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://servicedesk.surf.nl/",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:publinova",
+    "service": {
+      "id": "surf-node:servicebundle:publinova",
+      "abbreviation": "P",
+      "name": "Publinova",
+      "webpage": "https://www.surf.nl/en/services/publishing/publinova",
+      "description": "Publinova is the national platform that makes practice-based research findable and visible to all, and where researchers and professors can share their expertise with colleagues from other universities of applied sciences and professionals from the field.",
+      "tagline": "Practice-oriented research findable and accessible",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-sharing_and_discovery-data",
+          "subcategory": "subcategory-sharing_and_discovery-data-statistical_data"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "publinova",
+        "publishing",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "sanne.tonkens@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/publishing/publinova",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://publinova.nl/",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:sharecontrol",
+    "service": {
+      "id": "surf-node:servicebundle:sharecontrol",
+      "abbreviation": "S",
+      "name": "ShareControl",
+      "webpage": "https://www.surf.nl/en/services/publishing/sharecontrol",
+      "description": "ShareControl allows you to share data with plagiarism scan providers, without losing control of the data.",
+      "tagline": "In control",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-sharing_and_discovery-data",
+          "subcategory": "subcategory-sharing_and_discovery-data-statistical_data"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "publishing",
+        "sharecontrol",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "mirjam.buttner@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/publishing/sharecontrol",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://www.surf.nl/en/about/contact-with-surf",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:surf-data-repository",
+    "service": {
+      "id": "surf-node:servicebundle:surf-data-repository",
+      "abbreviation": "SDR",
+      "name": "SURF Data Repository",
+      "webpage": "https://www.surf.nl/en/services/publishing/surf-data-repository",
+      "description": "Have you completed your research and want to make the data available to others? SURF Data Repository offers long-term storage of large datasets.",
+      "tagline": "Make your data FAIR",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-sharing_and_discovery-data",
+          "subcategory": "subcategory-sharing_and_discovery-data-statistical_data"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "data",
+        "publishing",
+        "repository",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "servicedesk@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/publishing/surf-data-repository",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://servicedesk.surf.nl/",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:surfsharekit",
+    "service": {
+      "id": "surf-node:servicebundle:surfsharekit",
+      "abbreviation": "S",
+      "name": "SURFsharekit",
+      "webpage": "https://www.surf.nl/en/services/publishing/surfsharekit",
+      "description": "Save your research publications, thesis products and OERs digitally and sustainably and make them freely available via SURFsharekit, the open access repository service for higher education.",
+      "tagline": "Knowledge safely stored",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-sharing_and_discovery-data",
+          "subcategory": "subcategory-sharing_and_discovery-data-statistical_data"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "publishing",
+        "surf",
+        "surfsharekit"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "info@surfsharekit.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/publishing/surfsharekit",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://surfsharekit.nl/login",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:cybersave-yourself",
+    "service": {
+      "id": "surf-node:servicebundle:cybersave-yourself",
+      "abbreviation": "CY",
+      "name": "Cybersave Yourself",
+      "webpage": "https://www.surf.nl/en/services/security/cybersave-yourself",
+      "description": "Then use Cybersave Yourself. This service includes an online toolkit and ready-to-use e-modules you can get started with in no time.",
+      "tagline": "Within one hour security or privacy campaign",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-security_and_operations-security_and_identity",
+          "subcategory": "subcategory-security_and_operations-security_and_identity-threat_protection"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "cybersave",
+        "security",
+        "surf",
+        "yourself"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "rosanne.pouw@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/security/cybersave-yourself",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://www.cybersaveyourself.nl/en",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:eduvpn",
+    "service": {
+      "id": "surf-node:servicebundle:eduvpn",
+      "abbreviation": "E",
+      "name": "eduVPN",
+      "webpage": "https://www.surf.nl/en/services/security/eduvpn",
+      "description": "eduVPN is a highly secure and an open source-based VPN solution. It allows students, teachers and researchers to securely browse the internet from anywhere and you can give them secure access to your institution's protected systems.",
+      "tagline": "To be integrated into your institution network",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-security_and_operations-security_and_identity",
+          "subcategory": "subcategory-security_and_operations-security_and_identity-threat_protection"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "eduvpn",
+        "security",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "rogier.spoor@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/security/eduvpn",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://www.surf.nl/en/about/contact-with-surf",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:ozon-and-nozon",
+    "service": {
+      "id": "surf-node:servicebundle:ozon-and-nozon",
+      "abbreviation": "OAN",
+      "name": "OZON and NOZON",
+      "webpage": "https://www.surf.nl/en/services/security/ozon-and-nozon",
+      "description": "OZON is the sector-wide cyber crisis exercise for education and research that takes place every two years. During OZON, you practice how to respond in the event of a cyber crisis and find out whether, as an institution, you are already well prepared for a cyber crisis.In 2024, you can participate in NOZON, the light variant of OZON: a table-top exercise at IT or strategic level.",
+      "tagline": "Practising a cyber crisis with your institution and the industry",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-security_and_operations-security_and_identity",
+          "subcategory": "subcategory-security_and_operations-security_and_identity-threat_protection"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "and",
+        "nozon",
+        "ozon",
+        "security",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "charlie.vangenuchten@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/security/ozon-and-nozon",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://www.surf.nl/files/2023-11/handleiding-nozon.pdf",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:surfaudit",
+    "service": {
+      "id": "surf-node:servicebundle:surfaudit",
+      "abbreviation": "S",
+      "name": "SURFaudit",
+      "webpage": "https://www.surf.nl/en/services/security/surfaudit",
+      "description": "SURFaudit tests what level of information security and privacy protection your institution is at and allows you to compare it with the entire education and research sector.",
+      "tagline": "Assess your information security and/or privacy protection",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-security_and_operations-security_and_identity",
+          "subcategory": "subcategory-security_and_operations-security_and_identity-threat_protection"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "security",
+        "surf",
+        "surfaudit"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "theo.koster@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/security/surfaudit",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/195885453/SURFaudit",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:surfcert",
+    "service": {
+      "id": "surf-node:servicebundle:surfcert",
+      "abbreviation": "S",
+      "name": "SURFcert",
+      "webpage": "https://www.surf.nl/en/services/security/surfcert",
+      "description": "SURFcert gives you 24/7 support from our experts in case of security incidents. SURFcert also offers you various security solutions to optimise security at your institution yourself. Have you noticed a security incident in your institution's network? Then contact us directly via cert@surfcert.nl or +31 6 22 92 35 64 (24x7).",
+      "tagline": "Optimise your institution's security with DDos protection tools",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-security_and_operations-security_and_identity",
+          "subcategory": "subcategory-security_and_operations-security_and_identity-threat_protection"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "security",
+        "surf",
+        "surfcert"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "cert@surfcert.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/security/surfcert",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/195871173/SURFcert",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:surfcertificates",
+    "service": {
+      "id": "surf-node:servicebundle:surfcertificates",
+      "abbreviation": "S",
+      "name": "SURFcertificates",
+      "webpage": "https://www.surf.nl/en/services/security/surfcertificates",
+      "description": "Via SURFcertificates, you can apply for various types of certificates at relatively low cost. Certificates are important for your institution's IT security: they encrypt information between clients and web servers and can sign documents or software.",
+      "tagline": "Cheaper certificates",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-security_and_operations-security_and_identity",
+          "subcategory": "subcategory-security_and_operations-security_and_identity-threat_protection"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "security",
+        "surf",
+        "surfcertificates"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "certificaten-beheer@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/security/surfcertificates",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://mijn.surf.nl/",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:surfmailfilter",
+    "service": {
+      "id": "surf-node:servicebundle:surfmailfilter",
+      "abbreviation": "S",
+      "name": "SURFmailfilter",
+      "webpage": "https://www.surf.nl/en/services/security/surfmailfilter",
+      "description": "With SURFmailfilter, you easily check and filter all incoming and outgoing e-mail for viruses, phishing and spam. At least 95% of spam is detected.",
+      "tagline": "Management and control",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-security_and_operations-security_and_identity",
+          "subcategory": "subcategory-security_and_operations-security_and_identity-threat_protection"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "security",
+        "surf",
+        "surfmailfilter"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "mailfilter-beheer@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/security/surfmailfilter",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://dashboard.surfnet.nl/login.php",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:surfsoc",
+    "service": {
+      "id": "surf-node:servicebundle:surfsoc",
+      "abbreviation": "S",
+      "name": "SURFsoc",
+      "webpage": "https://www.surf.nl/en/services/security/surfsoc",
+      "description": "24/7 monitoring of your institution's ict infrastructure",
+      "tagline": "Security Information and Event Management (SIEM)",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-security_and_operations-security_and_identity",
+          "subcategory": "subcategory-security_and_operations-security_and_identity-threat_protection"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "security",
+        "surf",
+        "surfsoc"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "alexander.wisse@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/security/surfsoc",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://wiki.surfnet.nl/pages/viewpage.action?spaceKey=SURFsoc&title=SURFsoc",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:data-archive",
+    "service": {
+      "id": "surf-node:servicebundle:data-archive",
+      "abbreviation": "DA",
+      "name": "Data Archive",
+      "webpage": "https://www.surf.nl/en/services/storage-data-management/data-archive",
+      "description": "Want to store your data safely and for a long time? The Data Archive is the perfect place for that, even if it involves petabytes. From the archive, you also have quick access to our computing services.",
+      "tagline": "Safe",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-access_physical_and_eInfrastructures-data_storage",
+          "subcategory": "subcategory-access_physical_and_eInfrastructures-data_storage-backup"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "archive",
+        "data",
+        "storage-data-management",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "servicedesk@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/storage-data-management/data-archive",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://servicedesk.surf.nl/",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:dcache",
+    "service": {
+      "id": "surf-node:servicebundle:dcache",
+      "abbreviation": "D",
+      "name": "dCache",
+      "webpage": "https://www.surf.nl/en/services/storage-data-management/dcache",
+      "description": "dCache is an online storage platform ideally suited for large data sets from projects that use high-throughput data processing. Such as data from sensors, DNA sequences, telescopes and satellites.",
+      "tagline": "Various protocols and authentication systems",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-access_physical_and_eInfrastructures-data_storage",
+          "subcategory": "subcategory-access_physical_and_eInfrastructures-data_storage-backup"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "dcache",
+        "storage-data-management",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "servicedesk@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/storage-data-management/dcache",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://servicedesk.surf.nl/",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:object-store",
+    "service": {
+      "id": "surf-node:servicebundle:object-store",
+      "abbreviation": "OS",
+      "name": "Object Store",
+      "webpage": "https://www.surf.nl/en/services/storage-data-management/object-store",
+      "description": "Object Store is an online storage service for storing large amounts of research data. This service is ideal for storing different types of data. Your storage space can grow indefinitely, while keeping your data quickly and easily accessible.",
+      "tagline": "Scalable, sustainable and available",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-access_physical_and_eInfrastructures-data_storage",
+          "subcategory": "subcategory-access_physical_and_eInfrastructures-data_storage-backup"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "object",
+        "storage-data-management",
+        "store",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "servicedesk@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/storage-data-management/object-store",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://servicedesk.surf.nl/",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:rdm-storage-scale-out",
+    "service": {
+      "id": "surf-node:servicebundle:rdm-storage-scale-out",
+      "abbreviation": "RSSO",
+      "name": "RDM Storage Scale-out",
+      "webpage": "https://www.surf.nl/en/services/storage-data-management/rdm-storage-scale-out",
+      "description": "Do you need extra storage capacity for research data? With the Storage scale-out module for iRODS, you make simple and flexible use of the Data Archive at SURF. For example, for storing large datasets or data that are not actively used.",
+      "tagline": "Expand your storage as needed",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-access_physical_and_eInfrastructures-data_storage",
+          "subcategory": "subcategory-access_physical_and_eInfrastructures-data_storage-backup"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "out",
+        "rdm",
+        "scale",
+        "storage",
+        "storage-data-management",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "servicedesk@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/storage-data-management/rdm-storage-scale-out",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://servicedesk.surf.nl/",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:research-drive",
+    "service": {
+      "id": "surf-node:servicebundle:research-drive",
+      "abbreviation": "RD",
+      "name": "Research Drive",
+      "webpage": "https://www.surf.nl/en/services/storage-data-management/research-drive",
+      "description": "Does your research team need a lot of storage capacity for research data? Are you working with other institutions, industry or international partners? Research Drive allows you to store and share your research data in an online environment.",
+      "tagline": "Secure and flexible collaboration",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-access_physical_and_eInfrastructures-data_storage",
+          "subcategory": "subcategory-access_physical_and_eInfrastructures-data_storage-backup"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "drive",
+        "research",
+        "storage-data-management",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "servicedesk@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/storage-data-management/research-drive",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://servicedesk.surf.nl",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:surfdrive",
+    "service": {
+      "id": "surf-node:servicebundle:surfdrive",
+      "abbreviation": "S",
+      "name": "SURFdrive",
+      "webpage": "https://www.surf.nl/en/services/storage-data-management/surfdrive",
+      "description": "Store and share your files securely in the cloud. With SURFdrive, store, synchronise and share your files easily and securely in SURF's community cloud. SURFdrive is the personal cloud storage service for Dutch education and research.",
+      "tagline": "Securely store and share files",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-access_physical_and_eInfrastructures-data_storage",
+          "subcategory": "subcategory-access_physical_and_eInfrastructures-data_storage-backup"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers",
+        "target_user-students"
+      ],
+      "accessTypes": "access_mode-free_conditionally",
+      "tags": [
+        "storage-data-management",
+        "surf",
+        "surfdrive"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "servicedesk@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/storage-data-management/surfdrive",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://surfdrive.surf.nl",
+      "orderType": "order_type-open_access"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:surffilesender",
+    "service": {
+      "id": "surf-node:servicebundle:surffilesender",
+      "abbreviation": "S",
+      "name": "SURFfilesender",
+      "webpage": "https://www.surf.nl/en/services/storage-data-management/surffilesender",
+      "description": "Send files securely and encrypted. With SURFfilesender, you send large files, such as research data, with confidence. The files are stored in the Netherlands. Encryption offers extra security.",
+      "tagline": "Send and receive files easily",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-access_physical_and_eInfrastructures-data_storage",
+          "subcategory": "subcategory-access_physical_and_eInfrastructures-data_storage-backup"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-free",
+      "tags": [
+        "storage-data-management",
+        "surf",
+        "surffilesender"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "info@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/storage-data-management/surffilesender",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://filesender.surf.nl/",
+      "orderType": "order_type-open_access"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:yoda-hosting",
+    "service": {
+      "id": "surf-node:servicebundle:yoda-hosting",
+      "abbreviation": "YH",
+      "name": "Yoda Hosting",
+      "webpage": "https://www.surf.nl/en/services/storage-data-management/yoda-hosting",
+      "description": "With Yoda, you can securely store, add metadata to, analyse, publish and archive data. You can also collaborate easily, even outside your institution. By having Yoda hosted at SURF, you do not need to know as much about the technology behind it, and you can use our data storage solutions.",
+      "tagline": "Your data FAIR",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-access_physical_and_eInfrastructures-data_storage",
+          "subcategory": "subcategory-access_physical_and_eInfrastructures-data_storage-backup"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "hosting",
+        "storage-data-management",
+        "surf",
+        "yoda"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "servicedesk@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/storage-data-management/yoda-hosting",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://servicedesk.surf.nl/",
+      "orderType": "order_type-order_required"
+    }
+  }
+]

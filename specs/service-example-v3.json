@@ -1,0 +1,67 @@
+{
+  "id": "surf-node:servicebundle:123456",
+  "service": {
+    "id": "surf-node:servicebundle:123456",
+    "alternativeIdentifiers": [
+      {
+        "type": "doi",
+        "value": "10.1234/example.svc.123456"
+      },
+      {
+        "type": "hdl",
+        "value": "21.1234/EX-SVC-123456"
+      }
+    ],
+    "abbreviation": "EXSVC",
+    "name": "Example Service for Research Data Processing",
+    "webpage": "https://service.example.org",
+    "description": "Example Service for Research Data Processing provides scalable compute, curated datasets, and workflows to support reproducible research across multiple scientific domains.",
+    "tagline": "Scalable, reproducible research processing",
+    "logo": "https://service.example.org/assets/logo.png",
+    "scientificDomains": [
+      {
+        "scientificDomain": "scientific_domain-social_sciences",
+        "scientificSubdomain": null
+      },
+      {
+        "scientificDomain": "scientific_domain-engineering_and_technology",
+        "scientificSubdomain": null
+      }
+    ],
+    "categories": [
+      {
+        "category": "category-processing_and_analysis-data_analysis",
+        "subcategory": null
+      },
+      {
+        "category": "category-access_physical_and_eInfrastructures-compute",
+        "subcategory": null
+      }
+    ],
+    "targetUsers": [
+      "target_user-researchers     ",
+      "target_user-research_groups     ",
+      "target_user-research_infrastructure_managers     ",
+      "target_user-providers     "
+    ],
+    "accessTypes": "access_mode-free_conditionally     ",
+    "tags": [
+      "Reproducibility",
+      "workflows",
+      "datasets",
+      "high-performance"
+    ],
+    "languageAvailabilities": [
+      "EN",
+      "NL"
+    ],
+    "helpdeskEmail": "helpdesk@example.org",
+    "securityContactEmail": "security@example.org",
+    "trl": "trl-8",
+    "userManual": "https://service.example.org/docs/user-manual",
+    "termsOfUse": "https://service.example.org/legal/terms",
+    "privacyPolicy": "https://service.example.org/legal/privacy",
+    "accessPolicy": "https://service.example.org/legal/access",
+    "orderType": "order_type-open_access"
+  }
+}

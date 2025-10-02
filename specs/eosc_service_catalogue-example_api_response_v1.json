@@ -1,0 +1,183 @@
+{
+    "metadata": {
+        "registeredBy": "system",
+        "registeredAt": "1613666632297",
+        "modifiedBy": "system",
+        "modifiedAt": "1613666963711",
+        "published": true
+    },
+    "active": true,
+    "suspended": false,
+    "draft": false,
+    "legacy": false,
+    "status": "approved",
+    "sites": [
+        {
+            "name": "site_name",
+            "endpoints": [
+                {
+                    "name": "endpoint_name",
+                    "type": "endpoint_type-api",
+                    "url": "endpoint_url",
+                    "monitoringServiceType": "eu.eosc.container_platform.api"
+                }
+            ]
+        }
+    ],
+    "resourceOrganisationGroupID": "groupId",
+    "service": {
+        "id": "service_001",
+        "abbreviation": "SERV",
+        "name": "Sample Service",
+        "resourceOrganisation": "Sample Organisation",
+        "resourceProviders": [
+            "Provider1",
+            "Provider2"
+        ],
+        "webpage": "https://example.com",
+        "alternativeIdentifiers": [
+            {
+                "type": "Other ID Type",
+                "value": "abc-123"
+            }
+        ],
+        "description": "This is a sample service description.",
+        "tagline": "Providing high-quality services.",
+        "logo": "https://example.com/logo.png",
+        "multimedia": [
+            {
+                "multimediaURL": "https://example.com/media",
+                "multimediaName": "Sample Multimedia"
+            }
+        ],
+        "useCases": [
+            {
+                "useCaseURL": "https://example.com/use-case",
+                "useCaseName": "Sample Use Case"
+            }
+        ],
+        "scientificDomains": [
+            {
+                "scientificDomain": "scientific_domain-engineering_and_technology",
+                "scientificSubdomain": "scientific_subdomain-engineering_and_technology-chemical_engineering"
+            }
+        ],
+        "categories": [
+            {
+                "category": "category-access_physical_and_eInfrastructures-compute",
+                "subcategory": "subcategory-access_physical_and_eInfrastructures-network-content_delivery_network"
+            }
+        ],
+        "targetUsers": [
+            "target_user-businesses",
+            "target_user-other"
+        ],
+        "accessTypes": [
+            "access_type-remote",
+            "access_type-other"
+        ],
+        "accessModes": [
+            "access_mode-free"
+        ],
+        "tags": [
+            "innovation",
+            "technology"
+        ],
+        "horizontalService": true,
+        "serviceCategories": [
+            "service_category-compute",
+            "service_category-other"
+        ],
+        "marketplaceLocations": [
+            "marketplace_location-discover_research_outputs",
+            "marketplace_location-manage_research_data"
+        ],
+        "geographicalAvailabilities": [
+            "EU"
+        ],
+        "languageAvailabilities": [
+            "en",
+            "el"
+        ],
+        "resourceGeographicLocations": [
+            "EL",
+            "UK"
+        ],
+        "mainContact": {
+            "firstName": "John",
+            "lastName": "Doe",
+            "email": "contact@example.com",
+            "phone": "123-456-7890",
+            "position": "Manager",
+            "organisation": "Sample Org"
+        },
+        "publicContacts": [
+            {
+                "firstName": "Jane",
+                "lastName": "Smith",
+                "email": "jane.smith@example.com",
+                "phone": "098-765-4321",
+                "position": "Support",
+                "organisation": "Sample Org"
+            }
+        ],
+        "helpdeskEmail": "helpdesk@example.com",
+        "securityContactEmail": "security@example.com",
+        "trl": "trl-7",
+        "lifeCycleStatus": "life_cycle_status-operation",
+        "certifications": [
+            "Certification1",
+            "Certification2"
+        ],
+        "standards": [
+            "Standard1",
+            "Standard2"
+        ],
+        "openSourceTechnologies": [
+            "Technology1",
+            "Technology2"
+        ],
+        "version": "1.0.0",
+        "lastUpdate": "2024-09-09T12:00:00Z",
+        "changeLog": [
+            "Initial release.",
+            "Minor updates."
+        ],
+        "requiredResources": [
+            "Resource1",
+            "Resource2"
+        ],
+        "relatedResources": [
+            "RelatedResource1",
+            "RelatedResource2"
+        ],
+        "relatedPlatforms": [
+            "related_platform-datacite",
+            "related_platform-egiace"
+        ],
+        "fundingBody": [
+            "funding_body-aka",
+            "funding_body-arc"
+        ],
+        "fundingPrograms": [
+            "funding_program-agr"
+        ],
+        "grantProjectNames": [
+            "Project1",
+            "Project2"
+        ],
+        "helpdeskPage": "https://example.com/helpdesk",
+        "userManual": "https://example.com/user-manual",
+        "termsOfUse": "https://example.com/terms",
+        "privacyPolicy": "https://example.com/privacy",
+        "accessPolicy": "https://example.com/access-policy",
+        "resourceLevel": "https://example.com/resource-level",
+        "trainingInformation": "https://example.com/training",
+        "statusMonitoring": "https://example.com/status-monitoring",
+        "maintenance": "https://example.com/maintenance",
+        "orderType": "order_type-order_required",
+        "order": "https://example.com/order",
+        "paymentModel": "https://example.com/payment-model",
+        "pricing": "https://example.com/pricing"
+    }
+}

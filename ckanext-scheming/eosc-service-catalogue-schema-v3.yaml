@@ -1,0 +1,733 @@
+dataset_type: service
+about: EOSC Service Catalogue v3 schema for CKAN datasets
+about_url: https://github.com/eosc-services-catalog
+
+dataset_fields:
+- field_name: title
+  label: Service Name
+  preset: title
+  form_placeholder: eg. SURF Research Cloud
+  required: true
+
+- field_name: name
+  label: URL Slug
+  preset: dataset_slug
+  form_placeholder: eg. surf-research-cloud
+
+- field_name: notes
+  label: Detailed Description
+  preset: markdown
+  form_placeholder: >-
+      Describe the service scope, key features, and eligibility criteria.
+  required: true
+  validators: not_empty unicode_safe
+
+- field_name: bundle_id
+  label: Service Bundle ID
+  validators: not_empty unicode_safe
+  form_placeholder: eg. surf-node:servicebundle:123456
+  help_text: Use the unique identifier that will be exposed via the EOSC API.
+
+- field_name: abbreviation
+  label: Abbreviation
+  validators: ignore_missing unicode_safe
+  help_text: Short code used internally for the service (optional).
+
+- field_name: webpage
+  label: Service Webpage
+  validators: not_empty unicode_safe url_validator
+  form_placeholder: https://service.example.org
+
+- field_name: tagline
+  label: Tagline
+  validators: ignore_missing unicode_safe
+  help_text: Single-sentence value proposition shown to users.
+
+- field_name: logo
+  label: Logo URL
+  validators: ignore_missing unicode_safe url_validator
+  form_placeholder: https://service.example.org/logo.png
+
+- field_name: scientific_classification
+  label: Scientific Classification
+  repeating_subfields:
+  - field_name: scientific_domain
+    label: Scientific Domain
+    preset: select
+    validators: scheming_required scheming_choices
+    choices:
+      - value: scientific_domain-agricultural_sciences
+        label: "Agricultural Sciences"
+      - value: scientific_domain-engineering_and_technology
+        label: "Engineering & Technology"
+      - value: scientific_domain-generic
+        label: "Generic"
+      - value: scientific_domain-humanities
+        label: "Humanities"
+      - value: scientific_domain-medical_and_health_sciences
+        label: "Medical & Health Sciences"
+      - value: scientific_domain-natural_sciences
+        label: "Natural Sciences"
+      - value: scientific_domain-other
+        label: "Other"
+      - value: scientific_domain-social_sciences
+        label: "Social Sciences"
+  - field_name: scientific_subdomain
+    label: Scientific Subdomain
+    preset: select
+    validators: ignore_missing scheming_choices
+    help_text: Select the closest subdomain or leave blank if not applicable.
+    choices:
+      - value: scientific_subdomain-agricultural_sciences-agricultural_biotechnology
+        label: "Agricultural Biotechnology"
+      - value: scientific_subdomain-agricultural_sciences-agriculture_forestry_and_fisheries
+        label: "Agriculture, Forestry & Fisheries"
+      - value: scientific_subdomain-agricultural_sciences-animal_and_dairy_sciences
+        label: "Animal & Dairy Sciences"
+      - value: scientific_subdomain-agricultural_sciences-other_agricultural_sciences
+        label: "Other Agricultural Sciences"
+      - value: scientific_subdomain-agricultural_sciences-veterinary_sciences
+        label: "Veterinary Sciences"
+      - value: scientific_subdomain-engineering_and_technology-chemical_engineering
+        label: "Chemical Engineering"
+      - value: scientific_subdomain-engineering_and_technology-civil_engineering
+        label: "Civil Engineering"
+      - value: scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering
+        label: "Electrical, Electronic & Information Engineering"
+      - value: scientific_subdomain-engineering_and_technology-environmental_biotechnology
+        label: "Environmental Biotechnology"
+      - value: scientific_subdomain-engineering_and_technology-environmental_engineering
+        label: "Environmental Engineering"
+      - value: scientific_subdomain-engineering_and_technology-industrial_biotechnology
+        label: "Industrial Biotechnology"
+      - value: scientific_subdomain-engineering_and_technology-materials_engineering
+        label: "Materials Engineering"
+      - value: scientific_subdomain-engineering_and_technology-mechanical_engineering
+        label: "Mechanical Engineering"
+      - value: scientific_subdomain-engineering_and_technology-medical_engineering
+        label: "Medical Engineering"
+      - value: scientific_subdomain-engineering_and_technology-nanotechnology
+        label: "Nanotechnology"
+      - value: scientific_subdomain-engineering_and_technology-other_engineering_and_technology_sciences
+        label: "Other Engineering & Technology Sciences"
+      - value: scientific_subdomain-generic-generic
+        label: "Generic"
+      - value: scientific_subdomain-humanities-arts
+        label: "Arts"
+      - value: scientific_subdomain-humanities-history_and_archaeology
+        label: "History & Archaeology"
+      - value: scientific_subdomain-humanities-languages_and_literature
+        label: "Languages & Literature"
+      - value: scientific_subdomain-humanities-other_humanities
+        label: "Other Humanities"
+      - value: scientific_subdomain-humanities-philosophy_ethics_and_religion
+        label: "Philosophy, Ethics & Religion"
+      - value: scientific_subdomain-medical_and_health_sciences-basic_medicine
+        label: "Basic Medicine"
+      - value: scientific_subdomain-medical_and_health_sciences-clinical_medicine
+        label: "Clinical Medicine"
+      - value: scientific_subdomain-medical_and_health_sciences-health_sciences
+        label: "Health Sciences"
+      - value: scientific_subdomain-medical_and_health_sciences-medical_biotechnology
+        label: "Medical Biotechnology"
+      - value: scientific_subdomain-medical_and_health_sciences-other_medical_sciences
+        label: "Other Medical Sciences"
+      - value: scientific_subdomain-natural_sciences-biological_sciences
+        label: "Biological Sciences"
+      - value: scientific_subdomain-natural_sciences-chemical_sciences
+        label: "Chemical Sciences"
+      - value: scientific_subdomain-natural_sciences-computer_and_information_sciences
+        label: "Computer & Information Sciences"
+      - value: scientific_subdomain-natural_sciences-earth_and_related_environmental_sciences
+        label: "Earth & Related Environmental Sciences"
+      - value: scientific_subdomain-natural_sciences-mathematics
+        label: "Mathematics"
+      - value: scientific_subdomain-natural_sciences-other_natural_sciences
+        label: "Other Natural Sciences"
+      - value: scientific_subdomain-natural_sciences-physical_sciences
+        label: "Physical Sciences"
+      - value: scientific_subdomain-other-other
+        label: "Other"
+      - value: scientific_subdomain-social_sciences-economics_and_business
+        label: "Economics & Business"
+      - value: scientific_subdomain-social_sciences-educational_sciences
+        label: "Educational Sciences"
+      - value: scientific_subdomain-social_sciences-law
+        label: "Law"
+      - value: scientific_subdomain-social_sciences-media_and_communications
+        label: "Media & Communications"
+      - value: scientific_subdomain-social_sciences-other_social_sciences
+        label: "Other Social Sciences"
+      - value: scientific_subdomain-social_sciences-political_sciences
+        label: "Political Sciences"
+      - value: scientific_subdomain-social_sciences-psychology
+        label: "Psychology"
+      - value: scientific_subdomain-social_sciences-social_and_economic_geography
+        label: "Social & Economic Geography"
+      - value: scientific_subdomain-social_sciences-sociology
+        label: "Sociology"
+
+- field_name: service_categories
+  label: Service Categories
+  repeating_subfields:
+  - field_name: category
+    label: Category
+    preset: select
+    validators: scheming_required scheming_choices
+    choices:
+      - value: category-access_physical_and_eInfrastructures-compute
+        label: "Compute"
+      - value: category-access_physical_and_eInfrastructures-data_storage
+        label: "Data Storage"
+      - value: category-access_physical_and_eInfrastructures-instrument_and_equipment
+        label: "Instrument & Equipment"
+      - value: category-access_physical_and_eInfrastructures-material_storage
+        label: "Material Storage"
+      - value: category-access_physical_and_eInfrastructures-network
+        label: "Network"
+      - value: category-aggregators_and_integrators-aggregators_and_integrators
+        label: "Aggregators & Integrators"
+      - value: category-other-other
+        label: "Other"
+      - value: category-processing_and_analysis-data_analysis
+        label: "Data Analysis"
+      - value: category-processing_and_analysis-data_management
+        label: "Data Management"
+      - value: category-processing_and_analysis-measurement_and_materials_analysis
+        label: "Measurement & Materials Analysis"
+      - value: category-security_and_operations-operations_and_infrastructure_management_services
+        label: "Operations & Infrastructure Management Services"
+      - value: category-security_and_operations-security_and_identity
+        label: "Security & Identity"
+      - value: category-sharing_and_discovery-applications
+        label: "Applications"
+      - value: category-sharing_and_discovery-data
+        label: "Data"
+      - value: category-sharing_and_discovery-development_resources
+        label: "Development Resources"
+      - value: category-sharing_and_discovery-samples
+        label: "Samples"
+      - value: category-sharing_and_discovery-scholarly_communication
+        label: "Scholarly Communication"
+      - value: category-sharing_and_discovery-software
+        label: "Software"
+      - value: category-training_and_support-consultancy_and_support
+        label: "Consultancy & Support"
+      - value: category-training_and_support-education_and_training
+        label: "Education & Training"
+  - field_name: subcategory
+    label: Subcategory
+    preset: select
+    validators: ignore_missing scheming_choices
+    help_text: Choose the most relevant subcategory (optional).
+    choices:
+      - value: subcategory-processing_and_analysis-data_analysis-2d_3d_digitisation
+        label: "2D/3D Digitisation"
+      - value: subcategory-sharing_and_discovery-development_resources-apis_repository_gateway
+        label: "APIs Repository/Gateway"
+      - value: subcategory-processing_and_analysis-data_management-access
+        label: "Access"
+      - value: subcategory-security_and_operations-operations_and_infrastructure_management_services-accounting
+        label: "Accounting"
+      - value: subcategory-security_and_operations-operations_and_infrastructure_management_services-analysis
+        label: "Analysis"
+      - value: subcategory-sharing_and_discovery-scholarly_communication-analysis
+        label: "Analysis"
+      - value: subcategory-processing_and_analysis-measurement_and_materials_analysis-analysis
+        label: "Analysis"
+      - value: subcategory-processing_and_analysis-data_management-annotation
+        label: "Annotation"
+      - value: subcategory-processing_and_analysis-data_management-anonymisation
+        label: "Anonymisation"
+      - value: subcategory-training_and_support-consultancy_and_support-application_optimisation
+        label: "Application Optimisation"
+      - value: subcategory-training_and_support-consultancy_and_support-application_scaling
+        label: "Application Scaling"
+      - value: subcategory-training_and_support-consultancy_and_support-application_porting
+        label: "Application_Porting"
+      - value: subcategory-aggregators_and_integrators-aggregators_and_integrators-applications
+        label: "Applications"
+      - value: subcategory-sharing_and_discovery-applications-applications_repository
+        label: "Applications Repository"
+      - value: subcategory-access_physical_and_eInfrastructures-data_storage-archive
+        label: "Archive"
+      - value: subcategory-access_physical_and_eInfrastructures-material_storage-archiving
+        label: "Archiving"
+      - value: subcategory-processing_and_analysis-data_analysis-artificial_intelligence
+        label: "Artificial Intelligence"
+      - value: subcategory-access_physical_and_eInfrastructures-material_storage-assembly
+        label: "Assembly"
+      - value: subcategory-sharing_and_discovery-scholarly_communication-assessment
+        label: "Assessment"
+      - value: subcategory-training_and_support-consultancy_and_support-audit_and_assessment
+        label: "Audit & Assessment"
+      - value: subcategory-access_physical_and_eInfrastructures-data_storage-backup
+        label: "Backup"
+      - value: subcategory-training_and_support-consultancy_and_support-benchmarking
+        label: "Benchmarking"
+      - value: subcategory-security_and_operations-operations_and_infrastructure_management_services-billing
+        label: "Billing"
+      - value: subcategory-sharing_and_discovery-samples-biological_samples
+        label: "Biological Samples"
+      - value: subcategory-processing_and_analysis-data_management-brokering
+        label: "Brokering"
+      - value: subcategory-sharing_and_discovery-applications-business
+        label: "Business"
+      - value: subcategory-training_and_support-consultancy_and_support-calibration
+        label: "Calibration"
+      - value: subcategory-training_and_support-consultancy_and_support-certification
+        label: "Certification"
+      - value: subcategory-security_and_operations-security_and_identity-certification_authority
+        label: "Certification Authority"
+      - value: subcategory-processing_and_analysis-measurement_and_materials_analysis-characterisation
+        label: "Characterisation"
+      - value: subcategory-sharing_and_discovery-samples-characterisation
+        label: "Characterisation"
+      - value: subcategory-sharing_and_discovery-samples-chemical_compounds_library
+        label: "Chemical Compounds Library"
+      - value: subcategory-access_physical_and_eInfrastructures-instrument_and_equipment-chromatographer
+        label: "Chromatographer"
+      - value: subcategory-sharing_and_discovery-data-clinical_trial_data
+        label: "Clinical Trial Data"
+      - value: subcategory-sharing_and_discovery-applications-collaboration
+        label: "Collaboration"
+      - value: subcategory-sharing_and_discovery-applications-communication
+        label: "Communication"
+      - value: subcategory-security_and_operations-operations_and_infrastructure_management_services-configuration
+        label: "Configuration"
+      - value: subcategory-training_and_support-consultancy_and_support-consulting
+        label: "Consulting"
+      - value: subcategory-access_physical_and_eInfrastructures-compute-container_management
+        label: "Container Management"
+      - value: subcategory-access_physical_and_eInfrastructures-network-content_delivery_network
+        label: "Content Delivery Network"
+      - value: subcategory-security_and_operations-operations_and_infrastructure_management_services-coordination
+        label: "Coordination"
+      - value: subcategory-security_and_operations-security_and_identity-coordination
+        label: "Coordination"
+      - value: subcategory-access_physical_and_eInfrastructures-instrument_and_equipment-cytometer
+        label: "Cytometer"
+      - value: subcategory-access_physical_and_eInfrastructures-network-dns
+        label: "DNS"
+      - value: subcategory-access_physical_and_eInfrastructures-data_storage-data
+        label: "Data"
+      - value: subcategory-aggregators_and_integrators-aggregators_and_integrators-data
+        label: "Data"
+      - value: subcategory-sharing_and_discovery-data-data_archives
+        label: "Data Archives"
+      - value: subcategory-processing_and_analysis-data_analysis-data_extrapolation
+        label: "Data Extrapolation"
+      - value: subcategory-sharing_and_discovery-development_resources-developer_tools
+        label: "Developer Tools"
+      - value: subcategory-access_physical_and_eInfrastructures-data_storage-digital_preservation
+        label: "Digital Preservation"
+      - value: subcategory-processing_and_analysis-data_management-digitisation
+        label: "Digitisation"
+      - value: subcategory-access_physical_and_eInfrastructures-instrument_and_equipment-digitisation_equipment
+        label: "Digitisation Equipment"
+      - value: subcategory-access_physical_and_eInfrastructures-network-direct_connect
+        label: "Direct Connect"
+      - value: subcategory-sharing_and_discovery-scholarly_communication-discovery
+        label: "Discovery"
+      - value: subcategory-processing_and_analysis-data_management-discovery
+        label: "Discovery"
+      - value: subcategory-access_physical_and_eInfrastructures-data_storage-disk
+        label: "Disk"
+      - value: subcategory-access_physical_and_eInfrastructures-material_storage-disposal
+        label: "Disposal"
+      - value: subcategory-sharing_and_discovery-applications-education
+        label: "Education"
+      - value: subcategory-processing_and_analysis-data_management-embargo
+        label: "Embargo"
+      - value: subcategory-sharing_and_discovery-data-epidemiological_data
+        label: "Epidemiological Data"
+      - value: subcategory-access_physical_and_eInfrastructures-network-exchange
+        label: "Exchange"
+      - value: subcategory-access_physical_and_eInfrastructures-data_storage-file
+        label: "File"
+      - value: subcategory-security_and_operations-security_and_identity-firewall
+        label: "Firewall"
+      - value: subcategory-processing_and_analysis-data_analysis-forecast
+        label: "Forecast"
+      - value: subcategory-access_physical_and_eInfrastructures-material_storage-fulfilment
+        label: "Fulfilment"
+      - value: subcategory-access_physical_and_eInfrastructures-instrument_and_equipment-geophysical
+        label: "Geophysical"
+      - value: subcategory-sharing_and_discovery-data-government_and_agency_data
+        label: "Government & Agency Data"
+      - value: subcategory-security_and_operations-security_and_identity-group_management
+        label: "Group Management"
+      - value: subcategory-access_physical_and_eInfrastructures-compute-hpc_access
+        label: "HPC Access"
+      - value: subcategory-security_and_operations-operations_and_infrastructure_management_services-helpdesk
+        label: "Helpdesk"
+      - value: subcategory-security_and_operations-security_and_identity-identity_and_access_management
+        label: "Identity & Access Management"
+      - value: subcategory-processing_and_analysis-data_analysis-image_data_analysis
+        label: "Image/Data Analysis"
+      - value: subcategory-training_and_support-education_and_training-in_house_courses
+        label: "In-House Courses"
+      - value: subcategory-access_physical_and_eInfrastructures-compute-interactive_notebooks
+        label: "Interactive Notebooks"
+      - value: subcategory-processing_and_analysis-data_management-interlinking
+        label: "Interlinking"
+      - value: subcategory-access_physical_and_eInfrastructures-compute-job_execution
+        label: "Job Execution"
+      - value: subcategory-access_physical_and_eInfrastructures-instrument_and_equipment-laser
+        label: "Laser"
+      - value: subcategory-sharing_and_discovery-software-libraries
+        label: "Libraries"
+      - value: subcategory-access_physical_and_eInfrastructures-network-load_balancer
+        label: "Load Balancer"
+      - value: subcategory-processing_and_analysis-data_analysis-machine_learning
+        label: "Machine Learning"
+      - value: subcategory-processing_and_analysis-data_management-maintenance
+        label: "Maintenance"
+      - value: subcategory-processing_and_analysis-measurement_and_materials_analysis-maintenance_and_modification
+        label: "Maintenance & Modification"
+      - value: subcategory-sharing_and_discovery-data-metadata
+        label: "Metadata"
+      - value: subcategory-training_and_support-consultancy_and_support-methodology_development
+        label: "Methodology Development"
+      - value: subcategory-access_physical_and_eInfrastructures-instrument_and_equipment-microscopy
+        label: "Microscopy"
+      - value: subcategory-processing_and_analysis-data_management-mining
+        label: "Mining"
+      - value: subcategory-training_and_support-consultancy_and_support-modeling_and_simulation
+        label: "Modeling & Simulation"
+      - value: subcategory-security_and_operations-operations_and_infrastructure_management_services-monitoring
+        label: "Monitoring"
+      - value: subcategory-access_physical_and_eInfrastructures-instrument_and_equipment-monument_maintenance_equipment
+        label: "Monument Maintenance Equipment"
+      - value: subcategory-access_physical_and_eInfrastructures-data_storage-online
+        label: "Online"
+      - value: subcategory-training_and_support-education_and_training-online_courses
+        label: "Online Courses"
+      - value: subcategory-sharing_and_discovery-data-online_service_data
+        label: "Online Service Data"
+      - value: subcategory-training_and_support-education_and_training-open_registration_courses
+        label: "Open Registration Courses"
+      - value: subcategory-access_physical_and_eInfrastructures-compute-orchestration
+        label: "Orchestration"
+      - value: subcategory-security_and_operations-operations_and_infrastructure_management_services-order_management
+        label: "Order Management"
+      - value: subcategory-processing_and_analysis-measurement_and_materials_analysis-other
+        label: "Other"
+      - value: subcategory-security_and_operations-operations_and_infrastructure_management_services-other
+        label: "Other"
+      - value: subcategory-aggregators_and_integrators-aggregators_and_integrators-other
+        label: "Other"
+      - value: subcategory-security_and_operations-security_and_identity-other
+        label: "Other"
+      - value: subcategory-sharing_and_discovery-development_resources-other
+        label: "Other"
+      - value: subcategory-sharing_and_discovery-data-other
+        label: "Other"
+      - value: subcategory-access_physical_and_eInfrastructures-compute-other
+        label: "Other"
+      - value: subcategory-sharing_and_discovery-software-other
+        label: "Other"
+      - value: subcategory-sharing_and_discovery-applications-other
+        label: "Other"
+      - value: subcategory-training_and_support-education_and_training-other
+        label: "Other"
+      - value: subcategory-access_physical_and_eInfrastructures-instrument_and_equipment-other
+        label: "Other"
+      - value: subcategory-sharing_and_discovery-samples-other
+        label: "Other"
+      - value: subcategory-training_and_support-consultancy_and_support-other
+        label: "Other"
+      - value: subcategory-processing_and_analysis-data_analysis-other
+        label: "Other"
+      - value: subcategory-sharing_and_discovery-scholarly_communication-other
+        label: "Other"
+      - value: subcategory-access_physical_and_eInfrastructures-data_storage-other
+        label: "Other"
+      - value: subcategory-processing_and_analysis-data_management-other
+        label: "Other"
+      - value: subcategory-access_physical_and_eInfrastructures-network-other
+        label: "Other"
+      - value: subcategory-access_physical_and_eInfrastructures-material_storage-other
+        label: "Other"
+      - value: subcategory-other-other-other
+        label: "Other"
+      - value: subcategory-sharing_and_discovery-scholarly_communication-outreach
+        label: "Outreach"
+      - value: subcategory-access_physical_and_eInfrastructures-material_storage-packaging
+        label: "Packaging"
+      - value: subcategory-processing_and_analysis-data_management-persistent_identifier
+        label: "Persistent Identifier"
+      - value: subcategory-sharing_and_discovery-software-platform
+        label: "Platform"
+      - value: subcategory-sharing_and_discovery-samples-preparation
+        label: "Preparation"
+      - value: subcategory-sharing_and_discovery-scholarly_communication-preparation
+        label: "Preparation"
+      - value: subcategory-access_physical_and_eInfrastructures-material_storage-preservation
+        label: "Preservation"
+      - value: subcategory-processing_and_analysis-data_management-preservation
+        label: "Preservation"
+      - value: subcategory-processing_and_analysis-measurement_and_materials_analysis-production
+        label: "Production"
+      - value: subcategory-sharing_and_discovery-applications-productivity
+        label: "Productivity"
+      - value: subcategory-training_and_support-consultancy_and_support-prototype_development
+        label: "Prototype Development"
+      - value: subcategory-sharing_and_discovery-scholarly_communication-publication
+        label: "Publication"
+      - value: subcategory-processing_and_analysis-data_management-publishing
+        label: "Publishing"
+      - value: subcategory-processing_and_analysis-data_analysis-quality_assesment
+        label: "Quality Assesment"
+      - value: subcategory-access_physical_and_eInfrastructures-material_storage-quality_inspecting
+        label: "Quality Inspecting"
+      - value: subcategory-access_physical_and_eInfrastructures-data_storage-queue
+        label: "Queue"
+      - value: subcategory-access_physical_and_eInfrastructures-instrument_and_equipment-radiation
+        label: "Radiation"
+      - value: subcategory-access_physical_and_eInfrastructures-data_storage-recovery
+        label: "Recovery"
+      - value: subcategory-processing_and_analysis-data_management-registration
+        label: "Registration"
+      - value: subcategory-training_and_support-education_and_training-related_training
+        label: "Related Training"
+      - value: subcategory-access_physical_and_eInfrastructures-data_storage-replicated
+        label: "Replicated"
+      - value: subcategory-access_physical_and_eInfrastructures-material_storage-repository
+        label: "Repository"
+      - value: subcategory-training_and_support-education_and_training-required_training
+        label: "Required Training"
+      - value: subcategory-access_physical_and_eInfrastructures-material_storage-reworking
+        label: "Reworking"
+      - value: subcategory-sharing_and_discovery-data-scientific_research_data
+        label: "Scientific/Research Data"
+      - value: subcategory-access_physical_and_eInfrastructures-compute-serverless_applications_repository
+        label: "Serverless Applications Repository"
+      - value: subcategory-aggregators_and_integrators-aggregators_and_integrators-services
+        label: "Services"
+      - value: subcategory-sharing_and_discovery-development_resources-simulation_tools
+        label: "Simulation Tools"
+      - value: subcategory-security_and_operations-security_and_identity-single_sign_on
+        label: "Single Sign-On"
+      - value: subcategory-sharing_and_discovery-applications-social_networking
+        label: "Social/Networking"
+      - value: subcategory-aggregators_and_integrators-aggregators_and_integrators-software
+        label: "Software"
+      - value: subcategory-training_and_support-consultancy_and_support-software_development
+        label: "Software Development"
+      - value: subcategory-sharing_and_discovery-development_resources-software_development_kits
+        label: "Software Development Kits"
+      - value: subcategory-training_and_support-consultancy_and_support-software_improvement
+        label: "Software Improvement"
+      - value: subcategory-sharing_and_discovery-development_resources-software_libraries
+        label: "Software Libraries"
+      - value: subcategory-sharing_and_discovery-software-software_package
+        label: "Software Package"
+      - value: subcategory-sharing_and_discovery-software-software_repository
+        label: "Software Repository"
+      - value: subcategory-access_physical_and_eInfrastructures-material_storage-sorting
+        label: "Sorting"
+      - value: subcategory-access_physical_and_eInfrastructures-instrument_and_equipment-spectrometer
+        label: "Spectrometer"
+      - value: subcategory-access_physical_and_eInfrastructures-instrument_and_equipment-spectrophotometer
+        label: "Spectrophotometer"
+      - value: subcategory-sharing_and_discovery-data-statistical_data
+        label: "Statistical Data"
+      - value: subcategory-access_physical_and_eInfrastructures-data_storage-synchronised
+        label: "Synchronised"
+      - value: subcategory-processing_and_analysis-measurement_and_materials_analysis-testing_and_validation
+        label: "TEsting & Validation"
+      - value: subcategory-training_and_support-consultancy_and_support-technology_transfer
+        label: "Technology Transfer"
+      - value: subcategory-training_and_support-consultancy_and_support-testing
+        label: "Testing"
+      - value: subcategory-security_and_operations-security_and_identity-threat_protection
+        label: "Threat Protection"
+      - value: subcategory-security_and_operations-security_and_identity-tools
+        label: "Tools"
+      - value: subcategory-access_physical_and_eInfrastructures-network-traffic_manager
+        label: "Traffic Manager"
+      - value: subcategory-training_and_support-education_and_training-training_platform
+        label: "Training Platform"
+      - value: subcategory-training_and_support-education_and_training-training_tool
+        label: "Training Tool"
+      - value: subcategory-processing_and_analysis-data_management-transfer
+        label: "Transfer"
+      - value: subcategory-security_and_operations-operations_and_infrastructure_management_services-transportation
+        label: "Transportation"
+      - value: subcategory-security_and_operations-security_and_identity-user_authentication
+        label: "User Authentication"
+      - value: subcategory-sharing_and_discovery-applications-utilities
+        label: "Utilities"
+      - value: subcategory-security_and_operations-operations_and_infrastructure_management_services-utilities
+        label: "Utilities"
+      - value: subcategory-access_physical_and_eInfrastructures-network-vpn_gateway
+        label: "VPN Gateway"
+      - value: subcategory-processing_and_analysis-measurement_and_materials_analysis-validation
+        label: "Validation"
+      - value: subcategory-processing_and_analysis-data_management-validation
+        label: "Validation"
+      - value: subcategory-access_physical_and_eInfrastructures-compute-virtual_machine_management
+        label: "Virtual Machine Management"
+      - value: subcategory-access_physical_and_eInfrastructures-network-virtual_nework
+        label: "Virtual Network"
+      - value: subcategory-processing_and_analysis-data_analysis-visualization
+        label: "Visualization"
+      - value: subcategory-access_physical_and_eInfrastructures-material_storage-warehousing
+        label: "Warehousing"
+      - value: subcategory-processing_and_analysis-measurement_and_materials_analysis-workflows
+        label: "Workflows"
+      - value: subcategory-processing_and_analysis-data_analysis-workflows
+        label: "Workflows"
+      - value: subcategory-access_physical_and_eInfrastructures-compute-workload_management
+        label: "Workload Management"
+      - value: subcategory-sharing_and_discovery-scholarly_communication-writing
+        label: "Writing"
+
+- field_name: target_users
+  label: Target Users
+  preset: multiple_checkbox
+  required: true
+  validators: scheming_required scheming_multiple_choice
+  help_text: Select every stakeholder group that this service is designed to support.
+  choices:
+    - value: target_user-businesses
+      label: "Businesses"
+    - value: target_user-funders
+      label: "Funders"
+    - value: target_user-innovators
+      label: "Innovators"
+    - value: target_user-other
+      label: "Other"
+    - value: target_user-policy_makers
+      label: "Policy Makers"
+    - value: target_user-providers
+      label: "Providers"
+    - value: target_user-research_communities
+      label: "Research Communities"
+    - value: target_user-research_groups
+      label: "Research Groups"
+    - value: target_user-research_infrastructure_managers
+      label: "Research Infrastructure Managers"
+    - value: target_user-research_managers
+      label: "Research Managers"
+    - value: target_user-research_networks
+      label: "Research Networks"
+    - value: target_user-research_organisations
+      label: "Research Organisations"
+    - value: target_user-research_projects
+      label: "Research Projects"
+    - value: target_user-researchers
+      label: "Researchers"
+    - value: target_user-resource_managers
+      label: "Resource Managers"
+    - value: target_user-resource_provider_managers
+      label: "Provider Managers"
+    - value: target_user-publishers
+      label: "Publishers"
+    - value: target_user-students
+      label: "Students"
+
+- field_name: access_mode
+  label: Access Mode
+  preset: select
+  validators: ignore_missing scheming_choices
+  help_text: Describe how users can access the service (optional).
+  choices:
+    - value: access_mode-free
+      label: "Free"
+    - value: access_mode-free_conditionally
+      label: "Free Conditionally"
+    - value: access_mode-other
+      label: "Other"
+    - value: access_mode-paid
+      label: "Paid"
+    - value: access_mode-peer_reviewed
+      label: "Peer Reviewed"
+
+- field_name: language_availabilities
+  label: Language Availabilities
+  preset: multiple_text
+  form_blanks: 2
+  required: true
+  help_text: Provide ISO 639-1 codes such as EN, NL.
+
+- field_name: helpdesk_email
+  label: Helpdesk Email
+  validators: ignore_missing unicode_safe email_validator
+
+- field_name: security_contact_email
+  label: Security Contact Email
+  validators: ignore_missing unicode_safe email_validator
+
+- field_name: trl
+  label: Technology Readiness Level
+  preset: select
+  required: true
+  validators: scheming_required scheming_choices
+  choices:
+    - value: trl-1
+      label: "1 - basic principles observed"
+    - value: trl-2
+      label: "2 - technology concept formulated"
+    - value: trl-3
+      label: "3 - experimental proof of concept"
+    - value: trl-4
+      label: "4 - technology validated in lab"
+    - value: trl-5
+      label: "5 - technology validated in relevant environment"
+    - value: trl-6
+      label: "6 - technology demonstrated in relevant environment"
+    - value: trl-7
+      label: "7 - system prototype demonstration in operational environment"
+    - value: trl-8
+      label: "8 - system complete and qualified"
+    - value: trl-9
+      label: "9 - actual system proven in operational environment"
+
+- field_name: order_type
+  label: Order Type
+  preset: select
+  required: true
+  validators: scheming_required scheming_choices
+  choices:
+    - value: order_type-fully_open_access
+      label: "Fully Open Access"
+    - value: order_type-open_access
+      label: "Open Access"
+    - value: order_type-order_required
+      label: "Order Required"
+    - value: order_type-other
+      label: "Other"
+
+- field_name: user_manual
+  label: User Manual
+  validators: ignore_missing unicode_safe url_validator
+  help_text: URL to end-user documentation.
+
+- field_name: terms_of_use
+  label: Terms of Use
+  validators: ignore_missing unicode_safe url_validator
+  help_text: Legal terms users must accept.
+
+- field_name: privacy_policy
+  label: Privacy Policy
+  validators: ignore_missing unicode_safe url_validator
+  help_text: Service privacy policy.
+
+- field_name: access_policy
+  label: Access Policy
+  validators: ignore_missing unicode_safe url_validator
+  help_text: Explain how access decisions are made.
+
+- field_name: alternative_identifiers
+  label: Alternative Identifiers
+  preset: multiple_text
+  form_blanks: 1
+  validators: ignore_missing
+  help_text: List any DOIs, Handles, or internal IDs (format type:value).
+
+- field_name: tags
+  label: Tags
+  preset: tag_string_autocomplete
+  form_placeholder: cloud, compute, workflow

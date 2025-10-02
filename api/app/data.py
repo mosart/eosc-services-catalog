@@ -11,7 +11,8 @@ from typing import Any, Dict, Iterable, List
 # directory so we can iterate and validate them in a uniform way.
 _DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 _DATA_FILES: Iterable[str] = ("services.json",)
-_SCHEMA_FILE = _DATA_DIR / "eosc_service_catalogue.schema.json"
+_SCHEMA_DIR = Path(__file__).resolve().parent.parent / "schema"  # Directory for schema files
+_SCHEMA_FILE = _SCHEMA_DIR / "eosc_service_catalogue.schema_v1.json"
 
 # Load the official EOSC service bundle schema once so that we can both expose
 # it via the API and reuse it for local validation. The file is plain JSON, so

@@ -1,0 +1,203 @@
+[
+  {
+    "id": "surf-node:servicebundle:surf-research-cloud",
+    "service": {
+      "id": "surf-node:servicebundle:surf-research-cloud",
+      "abbreviation": "SRC",
+      "name": "SURF Research Cloud",
+      "webpage": "https://www.surf.nl/en/services/compute/surf-research-cloud",
+      "description": "SURF Research Cloud is a portal where you easily build a virtual research environment. You can use preconfigured workspaces and datasets or add them yourself. Institutions, research communities and suppliers can contribute to Research Cloud's functionality and catalogue by integrating their computing and data services.",
+      "tagline": "Create reproducible research environments",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-access_physical_and_eInfrastructures-compute",
+          "subcategory": "subcategory-access_physical_and_eInfrastructures-compute-workload_management"
+        }
+      ],
+      "targetUsers": [
+        "target_user-providers",
+        "target_user-research_communities",
+        "target_user-research_infrastructure_managers",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "cloud",
+        "compute",
+        "research",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "ivar.janmaat@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/compute/surf-research-cloud",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://www.surf.nl/en/access-to-compute-services",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:surffilesender",
+    "service": {
+      "id": "surf-node:servicebundle:surffilesender",
+      "abbreviation": "S",
+      "name": "SURFfilesender",
+      "webpage": "https://www.surf.nl/en/services/storage-data-management/surffilesender",
+      "description": "Send files securely and encrypted. With SURFfilesender, you send large files, such as research data, with confidence. The files are stored in the Netherlands. Encryption offers extra security.",
+      "tagline": "Send and receive files easily",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-access_physical_and_eInfrastructures-data_storage",
+          "subcategory": "subcategory-access_physical_and_eInfrastructures-data_storage-backup"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-free",
+      "tags": [
+        "storage-data-management",
+        "surf",
+        "surffilesender"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "info@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/storage-data-management/surffilesender",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://filesender.surf.nl/",
+      "orderType": "order_type-open_access"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:research-drive",
+    "service": {
+      "id": "surf-node:servicebundle:research-drive",
+      "abbreviation": "RD",
+      "name": "Research Drive",
+      "webpage": "https://www.surf.nl/en/services/storage-data-management/research-drive",
+      "description": "Does your research team need a lot of storage capacity for research data? Are you working with other institutions, industry or international partners? Research Drive allows you to store and share your research data in an online environment.",
+      "tagline": "Secure and flexible collaboration",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-engineering_and_technology",
+          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-access_physical_and_eInfrastructures-data_storage",
+          "subcategory": "subcategory-access_physical_and_eInfrastructures-data_storage-backup"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers"
+      ],
+      "accessTypes": "access_mode-other",
+      "tags": [
+        "drive",
+        "research",
+        "storage-data-management",
+        "surf"
+      ],
+      "languageAvailabilities": [
+        "EN",
+        "NL"
+      ],
+      "helpdeskEmail": "servicedesk@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://www.surf.nl/en/services/storage-data-management/research-drive",
+      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
+      "accessPolicy": "https://servicedesk.surf.nl",
+      "orderType": "order_type-order_required"
+    }
+  },
+  {
+    "id": "surf-node:servicebundle:nl-research-portal",
+    "service": {
+      "id": "surf-node:servicebundle:nl-research-portal",
+      "abbreviation": "NLRP",
+      "name": "Netherlands Research Portal",
+      "webpage": "https://netherlands.openaire.eu/",
+      "description": "A comprehensive collection of Dutch open research information, covering publications, research data sets, and research software items from Dutch repositories and CRIS systems, linked to research grants and research-performing organisations across the Netherlands.",
+      "tagline": "Discover Dutch open research outputs",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg",
+      "scientificDomains": [
+        {
+          "scientificDomain": "scientific_domain-generic",
+          "scientificSubdomain": "scientific_subdomain-generic-generic"
+        }
+      ],
+      "categories": [
+        {
+          "category": "category-sharing_and_discovery-data",
+          "subcategory": "subcategory-sharing_and_discovery-data-data_archives"
+        }
+      ],
+      "targetUsers": [
+        "target_user-research_communities",
+        "target_user-research_groups",
+        "target_user-research_projects",
+        "target_user-researchers",
+        "target_user-policy_makers",
+        "target_user-innovators",
+        "target_user-other",
+        "target_user-funders",
+        "target_user-businesses"
+      ],
+      "accessTypes": "access_mode-free",
+      "tags": [
+        "catalogue",
+        "metadata",
+        "netherlands",
+        "openaire",
+        "research"
+      ],
+      "languageAvailabilities": [
+        "EN"
+      ],
+      "helpdeskEmail": "servicedesk@surf.nl",
+      "securityContactEmail": "info@surf.nl",
+      "trl": "trl-8",
+      "userManual": "https://netherlands.openaire.eu/content",
+      "termsOfUse": "https://www.openaire.eu/terms-of-use",
+      "privacyPolicy": "https://www.openaire.eu/privacy",
+      "accessPolicy": "https://netherlands.openaire.eu/",
+      "orderType": "order_type-open_access"
+    }
+  }
+]

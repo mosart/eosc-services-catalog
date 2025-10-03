@@ -22,7 +22,7 @@
         },
         {
           "category": "category-access_physical_and_eInfrastructures-compute",
-          "subcategory": "subcategory-access_physical_and_eInfrastructures-compute-interactive_notebook"
+          "subcategory": "subcategory-access_physical_and_eInfrastructures-compute-interactive_notebooks"
         },
         {
           "category": "category-access_physical_and_eInfrastructures-compute",
@@ -34,7 +34,7 @@
         },
         {
           "category": "category-access_physical_and_eInfrastructures-data_storage",
-          "subcategory": "subcategory-access_physical_and_eInfrastructures-data_storage-file_storage"
+          "subcategory": "subcategory-access_physical_and_eInfrastructures-data_storage-file"
         },
         {
           "category": "category-sharing_and_discovery-software",

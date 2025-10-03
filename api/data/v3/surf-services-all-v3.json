@@ -27,7 +27,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "cloud",
         "compute",
@@ -77,7 +77,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "compute",
         "data",
@@ -128,7 +128,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "cloud",
         "compute",
@@ -177,7 +177,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "compute",
         "education",
@@ -227,7 +227,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "compute",
         "lumi",
@@ -275,7 +275,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "compute",
         "national",
@@ -327,7 +327,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "cloud",
         "compute",
@@ -376,7 +376,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "edubadges",
         "flexible-education",
@@ -423,7 +423,7 @@
         "target_user-research_projects",
         "target_user-students"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "flexible-education",
         "kies",
@@ -472,7 +472,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "flexible-education",
         "surf",
@@ -520,7 +520,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "edunl",
         "identity-access-management",
@@ -568,7 +568,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "access",
         "identity-access-management",
@@ -618,7 +618,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "identity-access-management",
         "surf",
@@ -667,7 +667,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "identity-access-management",
         "surf",
@@ -715,7 +715,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "eduid",
         "identity-and-access-management",
@@ -763,7 +763,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "eduroam",
         "network-connectivity",
@@ -811,7 +811,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "access",
         "eduroam",
@@ -861,7 +861,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "evpn",
         "network-connectivity",
@@ -909,7 +909,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "internet",
         "network-connectivity",
@@ -957,7 +957,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "iotroam",
         "network-connectivity",
@@ -1005,7 +1005,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "netherlight",
         "network-connectivity",
@@ -1053,7 +1053,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "connection",
         "network-connectivity",
@@ -1103,7 +1103,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "network-connectivity",
         "surf",
@@ -1151,7 +1151,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "network-connectivity",
         "surf",
@@ -1199,7 +1199,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "network-connectivity",
         "surf",
@@ -1247,7 +1247,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "content",
         "procurement",
@@ -1296,7 +1296,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "it",
         "procurement",
@@ -1345,7 +1345,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "compliance",
         "procurement-delivery",
@@ -1394,7 +1394,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "procurement-delivery",
         "surf",
@@ -1442,7 +1442,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "procurement-delivery",
         "surf",
@@ -1490,7 +1490,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "auteursrechtennl",
         "publishing",
@@ -1538,7 +1538,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "copyrightcheck",
         "publishing",
@@ -1587,7 +1587,7 @@
         "target_user-researchers",
         "target_user-students"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "edusources",
         "publishing",
@@ -1635,7 +1635,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "hbo",
         "kennisbank",
@@ -1684,7 +1684,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "identifiers",
         "persistent",
@@ -1733,7 +1733,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "publinova",
         "publishing",
@@ -1781,7 +1781,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "publishing",
         "sharecontrol",
@@ -1829,7 +1829,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "data",
         "publishing",
@@ -1878,7 +1878,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "publishing",
         "surf",
@@ -1926,7 +1926,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "cybersave",
         "security",
@@ -1975,7 +1975,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "eduvpn",
         "security",
@@ -2023,7 +2023,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "and",
         "nozon",
@@ -2073,7 +2073,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "security",
         "surf",
@@ -2121,7 +2121,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "security",
         "surf",
@@ -2169,7 +2169,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "security",
         "surf",
@@ -2217,7 +2217,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "security",
         "surf",
@@ -2265,7 +2265,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "security",
         "surf",
@@ -2313,7 +2313,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "archive",
         "data",
@@ -2362,7 +2362,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "dcache",
         "storage-data-management",
@@ -2410,7 +2410,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "object",
         "storage-data-management",
@@ -2459,7 +2459,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "out",
         "rdm",
@@ -2510,7 +2510,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "drive",
         "research",
@@ -2560,7 +2560,7 @@
         "target_user-researchers",
         "target_user-students"
       ],
-      "accessTypes": "access_mode-free_conditionally",
+      "accessMode": "access_mode-free_conditionally",
       "tags": [
         "storage-data-management",
         "surf",
@@ -2608,7 +2608,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-free",
+      "accessMode": "access_mode-free",
       "tags": [
         "storage-data-management",
         "surf",
@@ -2656,7 +2656,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "hosting",
         "storage-data-management",

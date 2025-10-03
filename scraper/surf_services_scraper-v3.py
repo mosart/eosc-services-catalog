@@ -100,7 +100,7 @@ BUNDLE_OVERRIDES: Mapping[str, Dict[str, object]] = {
             "target_user-research_projects",
             "target_user-researchers",
         ],
-        "accessTypes": "access_mode-other",
+        "accessMode": "access_mode-other",
         "languageAvailabilities": ["EN", "NL"],
     },
     "surfdrive": {
@@ -111,7 +111,7 @@ BUNDLE_OVERRIDES: Mapping[str, Dict[str, object]] = {
             "target_user-researchers",
             "target_user-students",
         ],
-        "accessTypes": "access_mode-free_conditionally",
+        "accessMode": "access_mode-free_conditionally",
         "orderType": "order_type-open_access",
     },
     "surfsecureid": {
@@ -124,7 +124,7 @@ BUNDLE_OVERRIDES: Mapping[str, Dict[str, object]] = {
         ],
     },
     "surffilesender": {
-        "accessTypes": "access_mode-free",
+        "accessMode": "access_mode-free",
         "orderType": "order_type-open_access",
     },
     "edusources": {
@@ -135,7 +135,7 @@ BUNDLE_OVERRIDES: Mapping[str, Dict[str, object]] = {
             "target_user-researchers",
             "target_user-students",
         ],
-        "accessTypes": "access_mode-other",
+        "accessMode": "access_mode-other",
     },
     "kies-op-maat": {
         "targetUsers": [
@@ -277,7 +277,7 @@ def scrape_service(url: str, session: requests.Session) -> Dict[str, object]:
             }
         ],
         "targetUsers": DEFAULT_TARGET_USERS[:],
-        "accessTypes": DEFAULT_ACCESS_TYPE,
+        "accessMode": DEFAULT_ACCESS_TYPE,
         "tags": tags,
         "languageAvailabilities": ["EN", "NL"],
         "helpdeskEmail": contact.email.strip(),

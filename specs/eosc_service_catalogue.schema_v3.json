@@ -489,7 +489,7 @@
           "minItems": 1,
           "uniqueItems": true
         },
-        "accessTypes": {
+        "accessMode": {
           "$ref": "#/$defs/AccessMode",
           "description": "Access mode provided by the service."
         },

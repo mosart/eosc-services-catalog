@@ -5,30 +5,53 @@
       "id": "surf-node:servicebundle:surf-research-cloud",
       "abbreviation": "SRC",
       "name": "SURF Research Cloud",
-      "webpage": "https://www.surf.nl/en/services/compute/surf-research-cloud",
+      "webpage": "https://eosc.nl",
       "description": "SURF Research Cloud is a portal where you easily build a virtual research environment. You can use preconfigured workspaces and datasets or add them yourself. Institutions, research communities and suppliers can contribute to Research Cloud's functionality and catalogue by integrating their computing and data services.",
       "tagline": "Create reproducible research environments",
       "logo": "https://www.surf.nl/themes/surf/logo.svg",
       "scientificDomains": [
         {
-          "scientificDomain": "scientific_domain-engineering_and_technology",
-          "scientificSubdomain": "scientific_subdomain-engineering_and_technology-electrical_electronic_and_information_engineering"
+          "scientificDomain": "scientific_domain-generic",
+          "scientificSubdomain": "scientific_subdomain-generic-generic"
         }
       ],
       "categories": [
         {
           "category": "category-access_physical_and_eInfrastructures-compute",
           "subcategory": "subcategory-access_physical_and_eInfrastructures-compute-workload_management"
+        },
+        {
+          "category": "category-access_physical_and_eInfrastructures-compute",
+          "subcategory": "subcategory-access_physical_and_eInfrastructures-compute-interactive_notebook"
+        },
+        {
+          "category": "category-access_physical_and_eInfrastructures-compute",
+          "subcategory": "subcategory-access_physical_and_eInfrastructures-compute-virtual_machine_management"
+        },
+        {
+          "category": "category-access_physical_and_eInfrastructures-data_storage",
+          "subcategory": "subcategory-access_physical_and_eInfrastructures-data_storage-disk"
+        },
+        {
+          "category": "category-access_physical_and_eInfrastructures-data_storage",
+          "subcategory": "subcategory-access_physical_and_eInfrastructures-data_storage-file_storage"
+        },
+        {
+          "category": "category-sharing_and_discovery-software",
+          "subcategory": "subcategory-sharing_and_discovery-software-other"
         }
       ],
       "targetUsers": [
         "target_user-providers",
         "target_user-research_communities",
+        "target_user-research_groups",
         "target_user-research_infrastructure_managers",
+        "target_user-research_organisations",
         "target_user-research_projects",
-        "target_user-researchers"
+        "target_user-researchers",
+        "target_user-students"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-free",
       "tags": [
         "cloud",
         "compute",
@@ -36,14 +59,13 @@
         "surf"
       ],
       "languageAvailabilities": [
-        "EN",
-        "NL"
+        "EN"
       ],
-      "helpdeskEmail": "ivar.janmaat@surf.nl",
-      "securityContactEmail": "info@surf.nl",
-      "trl": "trl-8",
-      "userManual": "https://www.surf.nl/en/services/compute/surf-research-cloud",
-      "termsOfUse": "https://www.surf.nl/en/terms-and-conditions",
+      "helpdeskEmail": "servicedesk@surf.nl",
+      "securityContactEmail": "cert@surfcert.nl",
+      "trl": "trl-9",
+      "userManual": "https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/9798172/SURF+Research+Cloud",
+      "termsOfUse": "https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/17825957/SRC+Acceptable+Use+Policy",
       "privacyPolicy": "https://www.surf.nl/en/privacy-statement",
       "accessPolicy": "https://www.surf.nl/en/access-to-compute-services",
       "orderType": "order_type-order_required"
@@ -77,7 +99,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-free",
+      "accessMode": "access_mode-free",
       "tags": [
         "storage-data-management",
         "surf",
@@ -125,7 +147,7 @@
         "target_user-research_projects",
         "target_user-researchers"
       ],
-      "accessTypes": "access_mode-other",
+      "accessMode": "access_mode-other",
       "tags": [
         "drive",
         "research",
@@ -179,7 +201,7 @@
         "target_user-funders",
         "target_user-businesses"
       ],
-      "accessTypes": "access_mode-free",
+      "accessMode": "access_mode-free",
       "tags": [
         "catalogue",
         "metadata",
